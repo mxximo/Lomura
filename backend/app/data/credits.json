@@ -1,0 +1,674 @@
+{
+  "ai_note": {
+    "es": "Los textos, ejemplos e ilustraciones originales se elaboraron con asistencia de inteligencia artificial. Las fuentes educativas y los recursos se reúnen aquí para que puedas consultarlos. Los videos fueron aportados por el responsable del proyecto; las referencias no implican respaldo institucional.",
+    "en": "Text, examples and original illustrations were created with AI assistance. Educational sources and resources are collected here for you to explore. Videos were provided by the project owner; references do not imply institutional endorsement."
+  },
+  "references": [
+    {
+      "id": "aao",
+      "category": "source",
+      "title": {
+        "es": "American Academy of Ophthalmology",
+        "en": "American Academy of Ophthalmology"
+      },
+      "citation": {
+        "es": "American Academy of Ophthalmology. (2021). Are blue light-blocking glasses worth it? https://aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it",
+        "en": "American Academy of Ophthalmology. (2021). Are blue light-blocking glasses worth it? https://aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it"
+      },
+      "url": "https://aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "osha",
+      "category": "source",
+      "title": {
+        "es": "OSHA · Computer Workstations",
+        "en": "OSHA · Computer Workstations"
+      },
+      "citation": {
+        "es": "Occupational Safety and Health Administration. (s. f.). Computer workstations: Checklists. U.S. Department of Labor. https://www.osha.gov/etools/computer-workstations/checklists/",
+        "en": "Occupational Safety and Health Administration. (n.d.). Computer workstations: Checklists. U.S. Department of Labor. https://www.osha.gov/etools/computer-workstations/checklists/"
+      },
+      "url": "https://www.osha.gov/etools/computer-workstations/checklists/",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "nist",
+      "category": "source",
+      "title": {
+        "es": "NIST SP 800-63B-4",
+        "en": "NIST SP 800-63B-4"
+      },
+      "citation": {
+        "es": "National Institute of Standards and Technology. (2025). Digital identity guidelines: Authentication and authenticator management (NIST SP 800-63B-4). https://pages.nist.gov/800-63-4/sp800-63b.html",
+        "en": "National Institute of Standards and Technology. (2025). Digital identity guidelines: Authentication and authenticator management (NIST SP 800-63B-4). https://pages.nist.gov/800-63-4/sp800-63b.html"
+      },
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "cisa",
+      "category": "source",
+      "title": {
+        "es": "CISA · Recognize and Report Phishing",
+        "en": "CISA · Recognize and Report Phishing"
+      },
+      "citation": {
+        "es": "Cybersecurity and Infrastructure Security Agency. (s. f.). Recognize and report phishing. https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+        "en": "Cybersecurity and Infrastructure Security Agency. (n.d.). Recognize and report phishing. https://www.cisa.gov/secure-our-world/recognize-and-report-phishing"
+      },
+      "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "pomodoro",
+      "category": "source",
+      "title": {
+        "es": "University of Northern British Columbia",
+        "en": "University of Northern British Columbia"
+      },
+      "citation": {
+        "es": "University of Northern British Columbia, Academic Success Centre. (s. f.). Pomodoro technique [Handout]. https://www.unbc.ca/sites/default/files/sections/academic-success-centre/pomodoro-technique.pdf",
+        "en": "University of Northern British Columbia, Academic Success Centre. (n.d.). Pomodoro technique [Handout]. https://www.unbc.ca/sites/default/files/sections/academic-success-centre/pomodoro-technique.pdf"
+      },
+      "url": "https://www.unbc.ca/sites/default/files/sections/academic-success-centre/pomodoro-technique.pdf",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "attention",
+      "category": "source",
+      "title": {
+        "es": "Stothart, Mitchum & Yehnert (2015)",
+        "en": "Stothart, Mitchum & Yehnert (2015)"
+      },
+      "citation": {
+        "es": "Stothart, C., Mitchum, A., & Yehnert, C. (2015). The attentional cost of receiving a cell phone notification. Journal of Experimental Psychology: Human Perception and Performance, 41(4), 893–897. https://doi.org/10.1037/xhp0000100 https://pubmed.ncbi.nlm.nih.gov/26121498/",
+        "en": "Stothart, C., Mitchum, A., & Yehnert, C. (2015). The attentional cost of receiving a cell phone notification. Journal of Experimental Psychology: Human Perception and Performance, 41(4), 893–897. https://doi.org/10.1037/xhp0000100 https://pubmed.ncbi.nlm.nih.gov/26121498/"
+      },
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "cdc",
+      "category": "source",
+      "title": {
+        "es": "CDC · About Sleep",
+        "en": "CDC · About Sleep"
+      },
+      "citation": {
+        "es": "Centers for Disease Control and Prevention. (2024). About sleep. https://www.cdc.gov/sleep/about/",
+        "en": "Centers for Disease Control and Prevention. (2024). About sleep. https://www.cdc.gov/sleep/about/"
+      },
+      "url": "https://www.cdc.gov/sleep/about/",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "google",
+      "category": "source",
+      "title": {
+        "es": "Google · Android Help",
+        "en": "Google · Android Help"
+      },
+      "citation": {
+        "es": "Google. (s. f.). Manage how you spend time on your Android phone with Digital Wellbeing. Android Help. https://support.google.com/android/answer/9346420?hl=en",
+        "en": "Google. (n.d.). Manage how you spend time on your Android phone with Digital Wellbeing. Android Help. https://support.google.com/android/answer/9346420?hl=en"
+      },
+      "url": "https://support.google.com/android/answer/9346420?hl=en",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "apple",
+      "category": "source",
+      "title": {
+        "es": "Apple · Screen Time",
+        "en": "Apple · Screen Time"
+      },
+      "citation": {
+        "es": "Apple. (s. f.). Get started with Screen Time on iPhone. iPhone User Guide (iOS 18). https://support.apple.com/en-gb/guide/iphone/iphbfa595995/18.0/ios/18.0",
+        "en": "Apple. (n.d.). Get started with Screen Time on iPhone. iPhone User Guide (iOS 18). https://support.apple.com/en-gb/guide/iphone/iphbfa595995/18.0/ios/18.0"
+      },
+      "url": "https://support.apple.com/en-gb/guide/iphone/iphbfa595995/18.0/ios/18.0",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "leech",
+      "category": "source",
+      "title": {
+        "es": "James Anderson · LeechBlock",
+        "en": "James Anderson · LeechBlock"
+      },
+      "citation": {
+        "es": "Anderson, J. (s. f.). LeechBlock: A simple free productivity tool. https://www.proginosko.com/leechblock/",
+        "en": "Anderson, J. (n.d.). LeechBlock: A simple free productivity tool. https://www.proginosko.com/leechblock/"
+      },
+      "url": "https://www.proginosko.com/leechblock/",
+      "note": {
+        "es": "Texto sintetizado y traducido con asistencia de IA. Los títulos originales se conservan en las citas APA. Revisar fecha, vigencia y correspondencia con la lección.",
+        "en": "Text summarised and translated with AI assistance. Original titles are retained in APA citations. Review dates, currency and relevance to the lesson."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "co-mintic",
+      "category": "source",
+      "title": {
+        "es": "MinTIC · En TIC Confío",
+        "en": "MinTIC · En TIC Confío"
+      },
+      "citation": {
+        "es": "Ministerio de Tecnologías de la Información y las Comunicaciones. (s. f.). En TIC Confío: programa de uso seguro y responsable de las TIC. https://www.mintic.gov.co/portal/715/w3-article-15261.html",
+        "en": "Ministry of Information Technologies and Communications of Colombia. (n.d.). En TIC Confío: safe and responsible ICT use programme. https://www.mintic.gov.co/portal/715/w3-article-15261.html"
+      },
+      "url": "https://www.mintic.gov.co/portal/715/w3-article-15261.html",
+      "note": {
+        "es": "Programa colombiano (creado en 2011, En TIC Confío+ desde 2021) que orienta sobre riesgos como el grooming, el ciberacoso y la ciberdependencia; sus campañas incluyen materiales sobre phishing. Verificado en web en 2026; revisar vigencia con el responsable editorial.",
+        "en": "Colombian programme (created in 2011, En TIC Confío+ since 2021) covering risks such as grooming, cyberbullying and cyberdependence; its campaigns include phishing materials. Verified online in 2026; confirm currency with the editorial owner."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "co-conpes",
+      "category": "source",
+      "title": {
+        "es": "DNP · CONPES 3995 de 2020",
+        "en": "DNP · CONPES 3995 (2020)"
+      },
+      "citation": {
+        "es": "Departamento Nacional de Planeación. (2020, 1 de julio). Política Nacional de Confianza y Seguridad Digital (Documento CONPES 3995). https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-desarrollo-digital/Paginas/documentos-conpes-confianza-y-seguridad-digital.aspx",
+        "en": "National Planning Department of Colombia. (2020, July 1). National Digital Trust and Security Policy (CONPES Document 3995). https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-desarrollo-digital/Paginas/documentos-conpes-confianza-y-seguridad-digital.aspx"
+      },
+      "url": "https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-desarrollo-digital/Paginas/documentos-conpes-confianza-y-seguridad-digital.aspx",
+      "note": {
+        "es": "Política colombiana que impulsa capacidades ciudadanas en seguridad digital (2020-2022). Verificado en web en 2026; revisar vigencia con el responsable editorial.",
+        "en": "Colombian policy promoting citizen digital-security capabilities (2020-2022). Verified online in 2026; confirm currency with the editorial owner."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "co-ley1581",
+      "category": "source",
+      "title": {
+        "es": "Ley 1581 de 2012 · Datos personales",
+        "en": "Law 1581 of 2012 · Personal data"
+      },
+      "citation": {
+        "es": "Congreso de Colombia. (2012, 18 de octubre). Ley Estatutaria 1581 de 2012: disposiciones generales para la protección de datos personales. Diario Oficial n.º 48.587. https://sedeelectronica.sic.gov.co/transparencia/normativa/ley-estatutaria-1581-de-2012",
+        "en": "Congress of Colombia. (2012, October 18). Statutory Law 1581 of 2012: general provisions for personal data protection. Official Gazette No. 48,587. https://sedeelectronica.sic.gov.co/transparencia/normativa/ley-estatutaria-1581-de-2012"
+      },
+      "url": "https://sedeelectronica.sic.gov.co/transparencia/normativa/ley-estatutaria-1581-de-2012",
+      "note": {
+        "es": "Respaldo legal colombiano del hábeas data: conocer, actualizar y rectificar datos, con vigilancia de la Superintendencia de Industria y Comercio. Verificado en web en 2026.",
+        "en": "Colombian legal basis for habeas data: access, update and correct personal data, overseen by the Superintendence of Industry and Commerce. Verified online in 2026."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "co-dane",
+      "category": "source",
+      "title": {
+        "es": "DANE · TIC en hogares 2023",
+        "en": "DANE · ICT in households 2023"
+      },
+      "citation": {
+        "es": "Departamento Administrativo Nacional de Estadística. (2024). Indicadores básicos de TIC en hogares 2023 (Encuesta Nacional de Calidad de Vida). https://www.dane.gov.co/files/operaciones/TICH/bol-TICH-2023.pdf",
+        "en": "National Administrative Department of Statistics of Colombia. (2024). Basic ICT indicators in households 2023 (National Quality of Life Survey). https://www.dane.gov.co/files/operaciones/TICH/bol-TICH-2023.pdf"
+      },
+      "url": "https://www.dane.gov.co/files/operaciones/TICH/bol-TICH-2023.pdf",
+      "note": {
+        "es": "Dato verificado: en 2023 el 63,9 % de los hogares colombianos tenía conexión a internet (70,5 % en cabeceras municipales y 41,4 % en centros poblados y rural disperso). Verificado en web en 2026.",
+        "en": "Verified figure: in 2023, 63.9% of Colombian households had an internet connection (70.5% in municipal centres and 41.4% in populated centres and dispersed rural areas). Verified online in 2026."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "co-rosario",
+      "category": "source",
+      "title": {
+        "es": "Univ. del Rosario · Móviles y sueño (2023)",
+        "en": "Rosario Univ. · Phones & sleep (2023)"
+      },
+      "citation": {
+        "es": "Avendaño, M. C., & Santamaría, M. (2023, 14 de marzo). Uso de dispositivos móviles y su impacto en el sueño de la población universitaria. Universidad del Rosario. https://urosario.edu.co/en/node/9049",
+        "en": "Avendaño, M. C., & Santamaría, M. (2023, March 14). Mobile device use and its impact on sleep in university students. Universidad del Rosario. https://urosario.edu.co/en/node/9049"
+      },
+      "url": "https://urosario.edu.co/en/node/9049",
+      "note": {
+        "es": "Investigación divulgada por una universidad colombiana: el uso nocturno del móvil altera la calidad del sueño en universitarios (insomnio y somnolencia diurna). Verificado en web en 2026.",
+        "en": "Research shared by a Colombian university: night-time phone use harms sleep quality in university students (insomnia and daytime sleepiness). Verified online in 2026."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "art-eyes",
+      "category": "art",
+      "title": {
+        "es": "Ojo junto a una ventana con un horizonte lejano",
+        "en": "An eye beside a window with a distant horizon"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Ojo junto a una ventana con un horizonte lejano [Ilustración SVG generada con IA para Bienestar Digital]. /media/eyes-v2.svg",
+        "en": "OpenAI. (2026). An eye beside a window with a distant horizon [AI-generated SVG illustration for Digital Wellbeing]. /media/eyes-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "video-eyes",
+      "category": "video",
+      "title": {
+        "es": "La regla 20-20-20",
+        "en": "The 20-20-20 rule"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=iF9N4bMvIac",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "art-display",
+      "category": "art",
+      "title": {
+        "es": "Dos pantallas con temas claro y oscuro",
+        "en": "Two screens with light and dark themes"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Dos pantallas con temas claro y oscuro [Ilustración SVG generada con IA para Bienestar Digital]. /media/display-v2.svg",
+        "en": "OpenAI. (2026). Two screens with light and dark themes [AI-generated SVG illustration for Digital Wellbeing]. /media/display-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-ergonomics",
+      "category": "art",
+      "title": {
+        "es": "Persona sentada con pies apoyados y monitor elevado",
+        "en": "A seated person with supported feet and a raised monitor"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Persona sentada con pies apoyados y monitor elevado [Ilustración SVG generada con IA para Bienestar Digital]. /media/ergonomics-v2.svg",
+        "en": "OpenAI. (2026). A seated person with supported feet and a raised monitor [AI-generated SVG illustration for Digital Wellbeing]. /media/ergonomics-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. Su postura esquemática se contrastó con las guías OSHA sobre posiciones y monitores; no reproduce sus ilustraciones.",
+        "en": "Original SVG created in code for this project. Its schematic posture was checked against OSHA guidance on positions and monitors; it does not reproduce their illustrations."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "video-ergonomics",
+      "category": "video",
+      "title": {
+        "es": "Configuración ergonómica",
+        "en": "An ergonomic setup"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=sjtxhTkDrL0",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "art-stretch",
+      "category": "art",
+      "title": {
+        "es": "Tres figuras realizando movimientos suaves de escritorio",
+        "en": "Three figures doing gentle desk movements"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Tres figuras realizando movimientos suaves de escritorio [Ilustración SVG generada con IA para Bienestar Digital]. /media/stretch-v2.svg",
+        "en": "OpenAI. (2026). Three figures doing gentle desk movements [AI-generated SVG illustration for Digital Wellbeing]. /media/stretch-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-password",
+      "category": "art",
+      "title": {
+        "es": "Escudo con cerradura y una llave de acceso",
+        "en": "A shield with a lock and an access key"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Escudo con cerradura y una llave de acceso [Ilustración SVG generada con IA para Bienestar Digital]. /media/password-v2.svg",
+        "en": "OpenAI. (2026). A shield with a lock and an access key [AI-generated SVG illustration for Digital Wellbeing]. /media/password-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-phishing",
+      "category": "art",
+      "title": {
+        "es": "Correo electrónico con un enlace bajo una lupa",
+        "en": "An email link under a magnifying glass"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Correo electrónico con un enlace bajo una lupa [Ilustración SVG generada con IA para Bienestar Digital]. /media/phishing-v2.svg",
+        "en": "OpenAI. (2026). An email link under a magnifying glass [AI-generated SVG illustration for Digital Wellbeing]. /media/phishing-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "video-phishing",
+      "category": "video",
+      "title": {
+        "es": "Identificación de phishing",
+        "en": "Recognising phishing"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=UuuAlP7ay6U",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "art-pomodoro",
+      "category": "art",
+      "title": {
+        "es": "Cuatro bloques de enfoque separados por descansos",
+        "en": "Four focus blocks separated by breaks"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Cuatro bloques de enfoque separados por descansos [Ilustración SVG generada con IA para Bienestar Digital]. /media/pomodoro-v2.svg",
+        "en": "OpenAI. (2026). Four focus blocks separated by breaks [AI-generated SVG illustration for Digital Wellbeing]. /media/pomodoro-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-blockers",
+      "category": "art",
+      "title": {
+        "es": "Ventana de estudio con las distracciones apartadas",
+        "en": "A study window with distractions set aside"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Ventana de estudio con las distracciones apartadas [Ilustración SVG generada con IA para Bienestar Digital]. /media/blockers-v2.svg",
+        "en": "OpenAI. (2026). A study window with distractions set aside [AI-generated SVG illustration for Digital Wellbeing]. /media/blockers-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-notifications",
+      "category": "art",
+      "title": {
+        "es": "Teléfono rodeado de burbujas de notificaciones",
+        "en": "A phone surrounded by notification bubbles"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Teléfono rodeado de burbujas de notificaciones [Ilustración SVG generada con IA para Bienestar Digital]. /media/notifications-v2.svg",
+        "en": "OpenAI. (2026). A phone surrounded by notification bubbles [AI-generated SVG illustration for Digital Wellbeing]. /media/notifications-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "video-notifications",
+      "category": "video",
+      "title": {
+        "es": "Bucles de dopamina y notificaciones",
+        "en": "Dopamine loops & notifications"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=TG9pqpRdtU8",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "art-sleep",
+      "category": "art",
+      "title": {
+        "es": "Dormitorio tranquilo con cama y luna creciente",
+        "en": "A quiet bedroom with a bed and crescent moon"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Dormitorio tranquilo con cama y luna creciente [Ilustración SVG creada mediante código con asistencia de IA para Bienestar Digital]. /media/sleep-v2.svg",
+        "en": "OpenAI. (2026). A quiet bedroom with a bed and crescent moon [SVG illustration created in code with AI assistance for Digital Wellbeing]. /media/sleep-v2.svg"
+      },
+      "url": null,
+      "note": {
+        "es": "SVG original creado mediante código para este proyecto. No reproduce ilustraciones de las fuentes citadas.",
+        "en": "Original SVG created in code for this project. Does not reproduce illustrations from cited sources."
+      },
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "art-hero",
+      "category": "art",
+      "title": {
+        "es": "Jardín digital y marca gráfica",
+        "en": "Digital garden and brand mark"
+      },
+      "citation": {
+        "es": "OpenAI. (2026). Jardín digital y símbolo de Lumora [Ilustraciones SVG originales asistidas por IA]. /media/hero.svg; /media/lumora.svg.",
+        "en": "OpenAI. (2026). Digital garden and Lumora symbol [Original AI-assisted SVG illustrations]. /media/hero.svg; /media/lumora.svg."
+      },
+      "note": {
+        "es": "Incluye los iconos de interfaz originales dibujados en Icon.jsx. La portada actual usa /media/hero-premium.webp, conversión sin pérdida de hero-premium.png; conservar la revisión de autoría final.",
+        "en": "Includes the original interface icons drawn in Icon.jsx. The current cover uses /media/hero-premium.webp, a lossless conversion of hero-premium.png; final attribution review remains pending."
+      },
+      "url": null,
+      "review": "[VERIFICAR] Atribución final / Final attribution"
+    },
+    {
+      "id": "fonts",
+      "category": "software",
+      "title": {
+        "es": "Tipografías: Space Grotesk, DM Sans y DM Mono",
+        "en": "Typefaces: Space Grotesk, DM Sans and DM Mono"
+      },
+      "citation": {
+        "es": "Google Fonts. (s. f.). Space Grotesk; DM Sans; DM Mono [Tipografías, SIL Open Font License 1.1]. https://fonts.google.com/",
+        "en": "Google Fonts. (n.d.). Space Grotesk; DM Sans; DM Mono [Typefaces, SIL Open Font License 1.1]. https://fonts.google.com/"
+      },
+      "url": "https://fonts.google.com/",
+      "note": {
+        "es": "Archivos WOFF2 servidos desde este sitio. Licencias y avisos de autoría originales incluidos en /fonts/. No se consulta Google Fonts al visitar la página.",
+        "en": "WOFF2 files served by this site. Original licenses and copyright notices included in /fonts/. Visiting this page does not contact Google Fonts."
+      },
+      "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+    },
+    {
+      "id": "video-display",
+      "category": "video",
+      "title": {
+        "es": "Configuración del dispositivo",
+        "en": "Device settings"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=6t60pHQbfdk",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "video-ergonomics-2",
+      "category": "video",
+      "title": {
+        "es": "Configuración ergonómica",
+        "en": "An ergonomic setup"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=74bCyEpFEdI",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "video-stretch",
+      "category": "video",
+      "title": {
+        "es": "Estiramiento rápido",
+        "en": "A quick movement break"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=admer1XX8YM",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "video-password",
+      "category": "video",
+      "title": {
+        "es": "Autenticación segura",
+        "en": "Secure authentication"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=boQKl5BkPfs",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "video-blockers",
+      "category": "video",
+      "title": {
+        "es": "Bloqueadores de distracciones",
+        "en": "Distraction blockers"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=XoChDJgVRuw",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    },
+    {
+      "id": "video-sleep",
+      "category": "video",
+      "title": {
+        "es": "Rutinas previas al sueño",
+        "en": "A wind-down routine"
+      },
+      "citation": {
+        "es": "Video compartido en TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Autor, título original y fecha pendientes de revisión.",
+        "en": "Video provided in TALLER2 PARA PAGINA MULTIMEDIA. YouTube. Author, original title and date pending review."
+      },
+      "url": "https://www.youtube.com/watch?v=fSqMGY3r45k",
+      "note": {
+        "es": "Enlace aportado por el responsable del proyecto. Verificar disponibilidad, inserción y subtítulos antes de publicar.",
+        "en": "Link provided by the project owner. Check availability, embedding and captions before publishing."
+      },
+      "review": "[VERIFICAR VIDEO]"
+    }
+  ]
+}

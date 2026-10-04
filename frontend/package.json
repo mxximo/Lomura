@@ -1,0 +1,28 @@
+{
+  "name": "digital-wellbeing",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src tests *.js index.html",
+    "format:check": "prettier --check src tests *.js index.html"
+  },
+  "dependencies": {
+    "driver.js": "^1.8.0",
+    "lucide-react": "^1.48.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.55.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "prettier": "^3.9.9",
+    "vite": "^7.1.0"
+  }
+}

@@ -1,0 +1,69 @@
+/* Lesson choreography: context arrives first, followed by reading and then
+   practice, so a module change reads as a new step instead of an instant swap. */
+@media (prefers-reduced-motion: no-preference) {
+  .lesson-heading {
+    animation: lesson-context-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .lesson-reading .lesson-text {
+    animation: lesson-reading-in 0.42s 60ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .lesson-reading .video-card {
+    animation: lesson-reading-in 0.58s 150ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .lesson-columns > .activity-card {
+    animation: lesson-practice-in 0.44s 100ms cubic-bezier(0.22, 1, 0.36, 1)
+      both;
+  }
+  .lesson-complete {
+    animation: lesson-context-in 0.3s 120ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .lesson-navigation {
+    animation: lesson-context-in 0.3s 160ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .sidebar-module.is-current-module {
+    animation: module-selected 0.56s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  .sidebar-module > a.current-lesson {
+    animation: lesson-selected 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+@keyframes lesson-context-in {
+  from {
+    transform: translate3d(0, 16px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes lesson-reading-in {
+  from {
+    transform: translate3d(-20px, 12px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes lesson-practice-in {
+  from {
+    transform: translate3d(20px, 12px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes module-selected {
+  from {
+    transform: translateX(-8px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes lesson-selected {
+  from {
+    transform: translateX(-6px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

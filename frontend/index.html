@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d7d2c8" />
+    <meta
+      name="description"
+      content="Lumora — Encuentra tu equilibrio digital. Un espacio bilingüe para construir una relación más sana con la tecnología."
+    />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-400-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>Lumora — Encuentra tu equilibrio digital</title>
+    <script>
+      try {
+        document.documentElement.dataset.theme =
+          localStorage.getItem("dw-theme") === "dark" ? "dark" : "light";
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

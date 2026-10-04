@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none"><defs>
+  <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#fcfaf5"/><stop offset="1" stop-color="#f1ede5"/></linearGradient>
+  <linearGradient id="sage" x2=".8" y2="1"><stop stop-color="#bcd3bf"/><stop offset="1" stop-color="#719780"/></linearGradient>
+  <linearGradient id="lavender" x2=".7" y2="1"><stop stop-color="#e2d8f4"/><stop offset="1" stop-color="#a694c1"/></linearGradient>
+  <linearGradient id="ink" x2=".7" y2="1"><stop stop-color="#726583"/><stop offset="1" stop-color="#423d55"/></linearGradient>
+  <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#d8b79f"/><stop offset="1" stop-color="#b88a72"/></linearGradient>
+  <linearGradient id="night" x2=".8" y2="1"><stop stop-color="#514d6d"/><stop offset="1" stop-color="#2e3548"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#453a62" flood-opacity=".12"/></filter>
+</defs><rect width="600" height="360" rx="28" fill="url(#paper)"/><circle cx="415" cy="160" r="139" fill="#e8e2f0" opacity=".48"/><path d="M44 320H554" stroke="#ded8cf" stroke-width="2"/>
+    <g filter="url(#shadow)"><rect x="223" y="35" width="155" height="284" rx="30" fill="url(#ink)"/><rect x="232" y="45" width="137" height="264" rx="23" fill="#f8f4f9"/><rect x="272" y="50" width="56" height="8" rx="4" fill="#9a89ab"/><circle cx="300" cy="150" r="43" fill="#e5dcef"/><path d="M277 161h46l-7-12v-18a16 16 0 0 0-32 0v18Zm18 8h10" stroke="#967fae" stroke-width="4" stroke-linejoin="round"/><path d="m277 125 45 46" stroke="#967fae" stroke-width="4" stroke-linecap="round"/>
+    <path d="M256 218h88m-88 15h62" stroke="#d1c3df" stroke-width="5" stroke-linecap="round"/><rect x="271" y="258" width="59" height="29" rx="15" fill="url(#sage)"/><circle cx="315" cy="272" r="10" fill="#f9faf5"/>
+    <rect x="67" y="101" width="184" height="68" rx="18" fill="#fcfaf6" stroke="#d3c7dd" stroke-width="2"/><circle cx="94" cy="134" r="13" fill="#d6e3d4"/><path d="M120 125h108m-108 17h77" stroke="#b8a7c9" stroke-width="5" stroke-linecap="round"/>
+    <rect x="352" y="177" width="183" height="66" rx="18" fill="#fcfaf6" stroke="#d3c7dd" stroke-width="2"/><circle cx="381" cy="210" r="13" fill="#e6d5c0"/><path d="M407 201h107m-107 17h77" stroke="#b8a7c9" stroke-width="5" stroke-linecap="round"/></g><path d="M171 70q19-13 38-9m185 69q29 0 37 19" stroke="#bcb0c6" stroke-width="2" stroke-dasharray="4 6"/>
+  </svg>

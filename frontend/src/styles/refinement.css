@@ -1,0 +1,145 @@
+.home-intention {
+  margin: 32px 0;
+  scroll-margin-top: 110px;
+}
+.home-intention .intention-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 12px 32px;
+  padding: 26px 32px;
+}
+.home-intention .intention-header {
+  grid-row: span 2;
+}
+.home-intention .intention-card > p {
+  margin: 0;
+}
+.home-intention .intention-options {
+  margin: 0;
+}
+.home-intention .intention-saved {
+  grid-row: span 2;
+}
+.home-bottom {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+.survey-draft-note {
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-reading);
+}
+.survey-draft-note p {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+}
+.hours-confirmation {
+  display: flex !important;
+  gap: 10px;
+  align-items: start;
+  font-size: 0.85rem;
+  font-weight: 400 !important;
+  margin-top: 16px;
+  min-height: 44px;
+}
+.hours-confirmation input {
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+  margin-top: 5px;
+  accent-color: var(--purple);
+}
+.admin-analysis {
+  margin: 26px 0;
+}
+.admin-analysis h2 {
+  font-size: 1.4rem;
+}
+.admin-analysis header > p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.analysis-grid article {
+  padding: 22px;
+  min-width: 0;
+}
+.analysis-grid h3 {
+  font-size: 1.05rem;
+  margin: 0 0 18px;
+}
+.analysis-grid article > p {
+  font-size: 0.85rem;
+}
+.analysis-bars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.analysis-bars li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 12px;
+  font-size: 0.8rem;
+}
+.analysis-bars progress {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 6px;
+}
+.readable-exports {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 24px;
+}
+.readable-exports button,
+.survey-draft-note button {
+  min-height: 44px;
+}
+.route-loading {
+  padding: 50px 0;
+  min-height: 360px;
+}
+@media (max-width: 1000px) {
+  .home-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-bottom .reminder-card {
+    grid-column: 1 / -1;
+  }
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .home-intention .intention-card {
+    display: block;
+    padding: 22px;
+  }
+  .home-intention .intention-options {
+    margin-top: 16px;
+  }
+  .home-intention .intention-header {
+    margin-bottom: 12px;
+  }
+  .home-intention .intention-saved {
+    margin-top: 18px;
+  }
+  .home-bottom {
+    grid-template-columns: 1fr;
+  }
+  .readable-exports {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

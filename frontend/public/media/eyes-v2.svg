@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none"><defs>
+  <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#fcfaf5"/><stop offset="1" stop-color="#f1ede5"/></linearGradient>
+  <linearGradient id="sage" x2=".8" y2="1"><stop stop-color="#bcd3bf"/><stop offset="1" stop-color="#719780"/></linearGradient>
+  <linearGradient id="lavender" x2=".7" y2="1"><stop stop-color="#e2d8f4"/><stop offset="1" stop-color="#a694c1"/></linearGradient>
+  <linearGradient id="ink" x2=".7" y2="1"><stop stop-color="#726583"/><stop offset="1" stop-color="#423d55"/></linearGradient>
+  <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#d8b79f"/><stop offset="1" stop-color="#b88a72"/></linearGradient>
+  <linearGradient id="night" x2=".8" y2="1"><stop stop-color="#514d6d"/><stop offset="1" stop-color="#2e3548"/></linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#453a62" flood-opacity=".12"/></filter>
+</defs><rect width="600" height="360" rx="28" fill="url(#paper)"/><circle cx="415" cy="160" r="139" fill="#e8e2f0" opacity=".48"/><path d="M44 320H554" stroke="#ded8cf" stroke-width="2"/>
+    <defs><clipPath id="window-view"><rect x="369" y="48" width="154" height="231" rx="69"/></clipPath></defs>
+    <g filter="url(#shadow)"><rect x="360" y="39" width="172" height="249" rx="76" fill="#a9c7b5"/><rect x="369" y="48" width="154" height="231" rx="69" fill="#e2eee5"/><g clip-path="url(#window-view)"><circle cx="409" cy="102" r="22" fill="#f4dda1"/><path d="m369 226 57-71 97 76v49H369Z" fill="#9aba9f"/><path d="m369 253 102-73 52 52v47H369Z" fill="#779c85"/></g><path d="M446 46v234m-76-113h151" stroke="#fffdf8" stroke-width="7"/>
+    <path d="M71 161q119-143 248 0-122 140-248 0Z" fill="#e1d5ef" stroke="#9179aa" stroke-width="4"/><circle cx="199" cy="161" r="48" fill="url(#lavender)"/><circle cx="199" cy="161" r="26" fill="#615075"/><circle cx="214" cy="146" r="10" fill="#faf8fc"/><path d="M98 154q101-104 193 0" stroke="#a995bb" stroke-width="3"/>
+    <rect x="124" y="251" width="151" height="52" rx="18" fill="#fcfaf6" stroke="#d8cfe0" stroke-width="2"/><circle cx="155" cy="277" r="15" stroke="#8d77a6" stroke-width="3"/><path d="M155 266v11l7 4" stroke="#8d77a6" stroke-width="3" stroke-linecap="round"/><path d="M185 274h65m-65 9h40" stroke="#a7bda8" stroke-width="5" stroke-linecap="round"/>
+    </g><path d="m307 116 12-5m-8 33h17m-22 31 12 6" stroke="#b7a580" stroke-width="3" stroke-linecap="round"/>
+  </svg>

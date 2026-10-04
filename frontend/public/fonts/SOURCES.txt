@@ -1,0 +1,2 @@
+Source: https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400..700&family=Space+Grotesk:wght@400..700&display=swap
+Licenses: https://github.com/google/fonts/tree/main/ofl/{dmmono,dmsans,spacegrotesk}

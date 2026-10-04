@@ -1,0 +1,492 @@
+/* Process states and responsive navigation. Keep these rules scoped: content
+   surfaces and controls must remain legible while transitions are running. */
+.practice-dock {
+  position: fixed;
+  z-index: 60;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(620px, calc(100% - 32px));
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 22px;
+  background: rgba(247, 245, 239, 0.94);
+}
+.practice-dock > a {
+  flex: 1;
+  min-width: 0;
+}
+.practice-dock span {
+  display: block;
+  font-size: 0.75rem;
+}
+.practice-dock strong {
+  font-family: var(--heading);
+  font-size: 1.3rem;
+  font-variant-numeric: tabular-nums;
+}
+body:has(.practice-dock) .footer {
+  padding-bottom: 150px;
+}
+.practice-jump {
+  margin: 8px 0 20px;
+}
+#lesson-practice {
+  scroll-margin-top: 115px;
+}
+.quiz-preference {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.quiz-preference input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--purple);
+}
+.resume-quiz h2 {
+  margin: 18px 0 10px;
+}
+.module-results {
+  margin: 30px 0;
+  text-align: left;
+}
+.module-results > div {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #38304424;
+}
+.module-results strong {
+  white-space: nowrap;
+}
+.retry-errors {
+  margin: 12px;
+}
+.journey-settings {
+  padding: 28px 0 0;
+}
+.journey-settings .feedback {
+  max-width: 700px;
+}
+.checklist-summary,
+.password-advice {
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 12px 0;
+}
+.lesson-text.glass {
+  background: var(--surface-reading);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: 1px solid var(--border);
+}
+.activity-card.glass {
+  background-color: var(--surface-control);
+  border: 1px solid var(--border);
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .glass,
+  .lesson-text.glass,
+  .activity-card.glass,
+  .navbar.glass {
+    background: #efede7;
+  }
+}
+
+/* Legibilidad en portátil: superficies opacas, texto más oscuro,
+   bordes visibles. El glass anterior (blancos 0.25-0.45 sobre
+   beige) se lavaba en pantallas con poco brillo/contraste. */
+.navbar,
+.module-card,
+.lesson-text,
+.activity-card,
+.quiz-card,
+.checkin-card,
+.reminder-card,
+.intention-card,
+.quiz-banner,
+.lesson-sidebar,
+.floating-note,
+.pill,
+.video-card,
+.tool-card,
+.check-item,
+.credit-item,
+.ai-note,
+.takeaway,
+.practice-dock {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+.navbar {
+  background: rgba(253, 252, 248, 0.96);
+  border: 1px solid var(--border);
+}
+.module-card,
+.lesson-text,
+.activity-card,
+.quiz-card,
+.checkin-card,
+.intention-card,
+.reminder-card,
+.quiz-banner,
+.lesson-sidebar,
+.video-card,
+.tool-card,
+.ai-note,
+.credit-item {
+  background: var(--surface-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 28px rgba(48, 45, 38, 0.1);
+}
+.floating-note,
+.pill,
+.checkin-feedback,
+.feedback,
+.takeaway,
+.check-item,
+.quiz-option,
+.stretch-option,
+.intention-option,
+.email-example {
+  background: #ffffff;
+  border-color: var(--border);
+}
+.pill,
+.hero-description,
+.module-card p,
+.section-heading p,
+.checkin-heading p,
+.reminder-card p,
+.quiz-result > p,
+.intention-card > p,
+.breadcrumb,
+.lesson-navigation span,
+.muted,
+.fact-body p,
+.quiz-encourage {
+  color: var(--muted);
+}
+.module-card p,
+.hero-description,
+.lesson-text > p,
+.activity-card > p {
+  color: #33363b;
+}
+.module-number,
+.theme-word,
+.eyebrow,
+.fact-badge,
+.status-pill {
+  opacity: 1;
+}
+.ghost-number {
+  opacity: 0.18;
+}
+.button.secondary {
+  background: #ffffff;
+  border-color: var(--border-strong);
+  color: #24262e;
+}
+input:not([type="range"]):not([type="checkbox"]):not([type="radio"]),
+select,
+.check-item,
+.quiz-option {
+  background: #ffffff;
+}
+:focus-visible {
+  outline: 3px solid var(--purple-dark);
+  outline-offset: 3px;
+}
+
+/* Si el sistema pide más contraste, endurecer aún más. */
+@media (prefers-contrast: more) {
+  :root {
+    --muted: #232624;
+    --border: #8f8875;
+    --surface-reading: #ffffff;
+    --surface-control: #ffffff;
+    --surface-card: #ffffff;
+  }
+  body {
+    background: #cfc9bb;
+  }
+  .module-card p,
+  .hero-description,
+  .lesson-text > p {
+    color: #16181d;
+  }
+  .navbar,
+  .glass,
+  .module-card,
+  .lesson-text,
+  .activity-card {
+    border: 1px solid #6f6a5c;
+  }
+}
+@media (max-width: 600px) {
+  .practice-dock {
+    gap: 10px;
+    padding: 12px;
+    bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .practice-dock .button {
+    padding: 10px 12px;
+  }
+  .module-results {
+    font-size: 0.85rem;
+  }
+}
+.resume-caption {
+  margin: 16px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.last-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #38304424;
+  font-size: 0.8rem;
+}
+.journey-toggle {
+  display: none;
+}
+.sidebar-title {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: 7px 9px;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+.sidebar-title > svg {
+  display: none;
+}
+.sidebar-title > span {
+  min-width: 0;
+}
+.sidebar-current-tag {
+  grid-column: 2;
+  justify-self: start;
+  font-size: 0.57rem;
+  letter-spacing: 0.04em;
+}
+.sidebar-module > a {
+  font-size: 0.76rem;
+  padding: 10px 8px;
+  line-height: 1.55;
+}
+.lesson-sidebar {
+  max-height: calc(100dvh - 140px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #a89fbc transparent;
+  overscroll-behavior: contain;
+}
+.lesson-text > p {
+  font-size: 0.95rem;
+  line-height: 1.85;
+}
+.activity-card > p {
+  font-size: 0.9rem;
+}
+.lesson-text,
+.activity-card {
+  min-width: 0;
+}
+.lesson-complete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 0;
+  border-bottom: 1px solid #38304424;
+}
+.lesson-complete .button:last-child {
+  margin-left: auto;
+}
+.completion-message {
+  color: var(--green);
+  font-size: 0.8rem;
+}
+.completion-message:empty {
+  display: none;
+}
+.lesson-navigation a {
+  border: 1px solid #ffffff90;
+  border-radius: 14px;
+  padding: 16px;
+  background: #ffffff38;
+}
+.lesson-navigation a:hover {
+  background: #ffffff65;
+}
+.timer-state {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.is-running .timer-state {
+  color: var(--green);
+}
+.timer-digits {
+  font-variant-numeric: tabular-nums;
+}
+.quiz-option:focus-within,
+.check-item:focus-within {
+  outline: 2px solid var(--purple);
+  outline-offset: 3px;
+}
+.quiz-option:has(input:disabled) {
+  cursor: default;
+}
+.quiz-option.incorrect-option {
+  border-color: #a6555e;
+  background: #f4e7e7;
+  box-shadow: inset 3px 0 #a6555e;
+}
+.quiz-auto {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 16px;
+}
+.auto-track {
+  flex: 1;
+  height: 3px;
+  background: #d5d5cc;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.auto-track i {
+  display: block;
+  height: 100%;
+  background: var(--green);
+  transform-origin: left;
+  animation: auto-countdown 3s linear forwards;
+}
+.quiz-auto button {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+.feedback small {
+  display: block;
+  margin-top: 10px;
+}
+.confetti-overlay {
+  overflow: hidden;
+  contain: strict;
+}
+.answer-review article {
+  padding: 18px 0;
+  border-top: 1px solid #bbb6c7;
+}
+#modules {
+  scroll-margin-top: 115px;
+}
+@keyframes auto-countdown {
+  to {
+    transform: scaleX(0);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .route-stage:has(.lesson-page) {
+    animation: none;
+  }
+  .quiz-question {
+    animation: question-enter 380ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .check-item,
+  .switch-track,
+  .switch-track:after {
+    transition:
+      transform 180ms ease,
+      background-color 180ms ease;
+  }
+  .nav-links.open {
+    animation: question-enter 220ms ease-out;
+  }
+  .quiz-option:hover:has(input:disabled) {
+    transform: none;
+  }
+}
+@keyframes question-enter {
+  from {
+    transform: translateY(12px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1100px) and (min-width: 801px) {
+  .lesson-layout {
+    grid-template-columns: 232px minmax(0, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .journey-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #ffffffc0;
+    border-radius: 14px;
+    color: var(--ink);
+    background: #ffffff70;
+    text-align: left;
+  }
+  .journey-toggle > span:first-of-type {
+    flex: 1;
+    font-weight: 600;
+  }
+  .journey-toggle small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .lesson-sidebar.journey-open {
+    display: block;
+    position: static;
+    max-height: none;
+  }
+  .lesson-sidebar {
+    scroll-margin-top: 100px;
+  }
+  .lesson-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .lesson-complete .button:last-child {
+    margin-left: 0;
+  }
+  .lesson-navigation {
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .auto-track i {
+    animation: none;
+  }
+}
+@supports not (backdrop-filter: blur(1px)) {
+  .glass,
+  .lesson-text.glass,
+  .activity-card.glass,
+  .navbar.glass {
+    background: #efede7;
+  }
+}

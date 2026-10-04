@@ -1,0 +1,382 @@
+[
+  {
+    "id": "q1",
+    "module_id": "m1",
+    "prompt": {
+      "es": "¿Cómo se practica la regla 20-20-20?",
+      "en": "How do you practise the 20-20-20 rule?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Mirar lejos 20 segundos cada 20 minutos",
+          "en": "Look into the distance for 20 seconds every 20 minutes"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Subir el brillo cada 20 minutos",
+          "en": "Increase brightness every 20 minutes"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Parpadear solo 20 veces al día",
+          "en": "Blink only 20 times a day"
+        }
+      }
+    ],
+    "correct_option": "a",
+    "explanation": {
+      "es": "La pauta propone mirar a unos 6 metros durante 20 segundos cada 20 minutos de trabajo cercano.",
+      "en": "The guideline suggests looking about 6 metres away for 20 seconds every 20 minutes of close-up work."
+    },
+    "source_id": "aao",
+    "lesson_id": "1.1"
+  },
+  {
+    "id": "q2",
+    "module_id": "m1",
+    "prompt": {
+      "es": "¿Qué describe mejor el modo oscuro?",
+      "en": "What best describes dark mode?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Previene cualquier problema visual",
+          "en": "It prevents every eye problem"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Es una preferencia de comodidad, no sustituye pausas",
+          "en": "It is a comfort preference, not a replacement for breaks"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Elimina la necesidad de dormir",
+          "en": "It removes the need for sleep"
+        }
+      }
+    ],
+    "correct_option": "b",
+    "explanation": {
+      "es": "Ajusta tema y brillo a tu entorno; ningún tema garantiza evitar fatiga visual.",
+      "en": "Adjust theme and brightness to your environment; no theme guarantees freedom from eye strain."
+    },
+    "source_id": "aao",
+    "lesson_id": "1.2"
+  },
+  {
+    "id": "q3",
+    "module_id": "m2",
+    "prompt": {
+      "es": "¿Cómo colocarías el monitor?",
+      "en": "How would you place your monitor?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "A un lado y muy por encima de los ojos",
+          "en": "To one side and far above eye level"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Sobre las rodillas",
+          "en": "On your knees"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Frente a ti, con el borde superior a la altura de los ojos o debajo",
+          "en": "In front of you, with the top at or below eye level"
+        }
+      }
+    ],
+    "correct_option": "c",
+    "explanation": {
+      "es": "Una pantalla frontal y bien ajustada reduce la necesidad de girar o levantar la cabeza.",
+      "en": "A properly positioned screen reduces the need to twist or lift your head."
+    },
+    "source_id": "osha",
+    "lesson_id": "2.1"
+  },
+  {
+    "id": "q4",
+    "module_id": "m2",
+    "prompt": {
+      "es": "Si un estiramiento produce dolor, ¿qué haces?",
+      "en": "If a stretch causes pain, what do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Lo detengo y evito forzarlo",
+          "en": "Stop and avoid forcing it"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Aumento la intensidad",
+          "en": "Increase the intensity"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Ignoro el dolor hasta acabar el reloj",
+          "en": "Ignore the pain until the timer ends"
+        }
+      }
+    ],
+    "correct_option": "a",
+    "explanation": {
+      "es": "Las pausas deben ser cómodas. Un temporizador no es motivo para continuar un movimiento doloroso.",
+      "en": "Breaks should feel comfortable. A timer is not a reason to continue a painful movement."
+    },
+    "source_id": "osha",
+    "lesson_id": "2.2"
+  },
+  {
+    "id": "q5",
+    "module_id": "m3",
+    "prompt": {
+      "es": "¿Qué protege mejor tus cuentas?",
+      "en": "What better protects your accounts?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Reutilizar una contraseña complicada",
+          "en": "Reuse one complicated password"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Contraseñas largas y únicas, y autenticación multifactor",
+          "en": "Long, unique passwords and multifactor authentication"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Compartir códigos con soporte por correo",
+          "en": "Share codes with support by email"
+        }
+      }
+    ],
+    "correct_option": "b",
+    "explanation": {
+      "es": "La longitud y la unicidad importan. MFA añade protección; prioriza métodos resistentes al phishing cuando estén disponibles.",
+      "en": "Length and uniqueness matter. MFA adds protection; prefer phishing-resistant methods when available."
+    },
+    "source_id": "nist",
+    "lesson_id": "3.1"
+  },
+  {
+    "id": "q6",
+    "module_id": "m3",
+    "prompt": {
+      "es": "Un correo urgente solicita tu código de acceso. ¿Qué haces?",
+      "en": "An urgent email asks for your login code. What do you do?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Respondo si incluye el logo oficial",
+          "en": "Reply if it includes the official logo"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Abro el enlace para comprobarlo",
+          "en": "Open its link to check"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Verifico por un canal conocido y reporto el mensaje",
+          "en": "Verify through a known channel and report it"
+        }
+      }
+    ],
+    "correct_option": "c",
+    "explanation": {
+      "es": "La urgencia y la solicitud de códigos son señales de alerta. Verifica fuera del mensaje.",
+      "en": "Urgency and requests for codes are warning signs. Verify outside the message."
+    },
+    "source_id": "cisa",
+    "lesson_id": "3.2"
+  },
+  {
+    "id": "q7",
+    "module_id": "m4",
+    "prompt": {
+      "es": "¿Qué haces antes de un bloque Pomodoro?",
+      "en": "What do you do before a Pomodoro block?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Elijo una tarea concreta",
+          "en": "Choose one specific task"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Abro todas mis redes sociales",
+          "en": "Open all my social feeds"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Elimino los descansos",
+          "en": "Remove breaks"
+        }
+      }
+    ],
+    "correct_option": "a",
+    "explanation": {
+      "es": "Un objetivo pequeño y una pausa prevista ayudan a estructurar la sesión.",
+      "en": "A small goal and a planned break help structure the session."
+    },
+    "source_id": "pomodoro",
+    "lesson_id": "4.1"
+  },
+  {
+    "id": "q8",
+    "module_id": "m4",
+    "prompt": {
+      "es": "¿Qué conviene revisar al elegir un bloqueador?",
+      "en": "What should you review when choosing a blocker?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Solo su color",
+          "en": "Only its colour"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Permisos, compatibilidad y acceso a recursos necesarios",
+          "en": "Permissions, compatibility and access to needed resources"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Que bloquee todos los contactos",
+          "en": "Whether it blocks all contacts"
+        }
+      }
+    ],
+    "correct_option": "b",
+    "explanation": {
+      "es": "La herramienta debe apoyar tu estudio sin impedir recursos o comunicaciones importantes.",
+      "en": "The tool should support study without cutting off important resources or communications."
+    },
+    "source_id": "leech",
+    "lesson_id": "4.2"
+  },
+  {
+    "id": "q9",
+    "module_id": "m5",
+    "prompt": {
+      "es": "¿Qué representa la simulación de notificaciones?",
+      "en": "What does the notification simulation represent?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "Una medición clínica de ansiedad",
+          "en": "A clinical anxiety measurement"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "Tus niveles de dopamina",
+          "en": "Your dopamine levels"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "Una ilustración de interrupciones",
+          "en": "An illustration of interruptions"
+        }
+      }
+    ],
+    "correct_option": "c",
+    "explanation": {
+      "es": "Es una demostración educativa. No mide salud mental ni sustancias del cerebro.",
+      "en": "It is an educational demonstration. It measures neither mental health nor brain chemicals."
+    },
+    "source_id": "attention",
+    "lesson_id": "5.1"
+  },
+  {
+    "id": "q10",
+    "module_id": "m5",
+    "prompt": {
+      "es": "Si duermes a las 23:00, ¿cuándo comienza nuestra rutina de una hora?",
+      "en": "If you sleep at 23:00, when does our one-hour routine begin?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": {
+          "es": "A las 22:00",
+          "en": "At 22:00"
+        }
+      },
+      {
+        "id": "b",
+        "text": {
+          "es": "A las 23:00",
+          "en": "At 23:00"
+        }
+      },
+      {
+        "id": "c",
+        "text": {
+          "es": "A las 00:00",
+          "en": "At 00:00"
+        }
+      }
+    ],
+    "correct_option": "a",
+    "explanation": {
+      "es": "Restamos una hora. Es una propuesta de rutina; el CDC habla de al menos 30 minutos sin dispositivos antes de dormir.",
+      "en": "We subtract one hour. This is a suggested routine; the CDC advises at least 30 minutes without devices before bed."
+    },
+    "source_id": "cdc",
+    "lesson_id": "5.2"
+  }
+]

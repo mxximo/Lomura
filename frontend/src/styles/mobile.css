@@ -1,0 +1,282 @@
+/* Compact attribution and a mobile layout that never relies on clipping. */
+.credit-folders {
+  display: grid;
+  gap: 14px;
+}
+.credits-authorship {
+  margin: 24px 0 0;
+  padding: 24px;
+}
+.credits-authorship h2 {
+  font-size: 1rem;
+}
+.credit-folder {
+  background: var(--surface-reading);
+  overflow: hidden;
+}
+.credit-folder > summary {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 22px 24px;
+  list-style: none;
+  min-height: 76px;
+}
+.credit-folder > summary::-webkit-details-marker {
+  display: none;
+}
+.credit-folder > summary > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.credit-folder strong {
+  display: block;
+  font-size: 1.05rem;
+}
+.credit-folder .small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+}
+.credit-folder-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  height: 44px;
+  width: 44px;
+  background: #ece7f4;
+  border-radius: 12px;
+  color: #453a8b;
+}
+.credit-count {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 50%;
+  background: var(--surface-control);
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.credit-folder .expand-sign {
+  float: none;
+  margin: 0;
+  flex-shrink: 0;
+}
+.credit-folder[open] > summary .expand-sign {
+  transform: rotate(45deg);
+}
+.credit-folder[open] > summary {
+  border-bottom: 1px solid var(--border);
+}
+.credit-folder-content {
+  padding: 0 20px 20px;
+}
+.credit-folder .credit-item {
+  background: var(--surface-control);
+  border: 1px solid var(--border);
+  box-shadow: none;
+  backdrop-filter: none;
+}
+.credit-folder .credit-content {
+  overflow-wrap: anywhere;
+}
+.credit-folder .credit-item summary > .expand-sign {
+  margin-left: auto;
+}
+.credit-folder .citation-text {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+[data-theme="dark"] .credit-folder-icon {
+  background: #343244;
+  color: #e0d5ff;
+}
+[data-theme="dark"] .credit-folder .citation-text {
+  background: #303d34;
+  color: var(--ink);
+}
+@media (max-width: 800px) {
+  .reading-tools button,
+  .copy-takeaway,
+  .focus-fab,
+  .tour-button,
+  .fact-controls button {
+    min-height: 44px;
+  }
+  .lesson-text > p {
+    font-size: calc(1rem * var(--reading-scale, 1));
+  }
+  .credit-folder .citation-text {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  textarea {
+    font-size: 16px;
+  }
+  .library-entry,
+  .video-card,
+  .survey-form,
+  .admin-records,
+  .survey-success,
+  .admin-login {
+    min-width: 0;
+  }
+  .video-heading > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .quiz-options,
+  .quiz-option,
+  .response-summary,
+  .response-details > div,
+  .admin-filters > label {
+    min-width: 0;
+  }
+  .quiz-option > span:not(.option-letter) {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .response-summary {
+    gap: 10px 12px;
+  }
+  .response-summary time {
+    flex-basis: calc(100% - 105px);
+  }
+  .response-details > div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .response-details dd {
+    font-weight: 600;
+  }
+  .admin-filters .button,
+  .records-toolbar .button {
+    width: 100%;
+  }
+  .records-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .credit-folder > summary {
+    padding: 18px;
+    gap: 12px;
+  }
+  .credit-folder .small {
+    line-height: 1.5;
+  }
+  .credit-folder-content {
+    padding: 0 12px 16px;
+  }
+  .credit-item summary {
+    padding: 16px;
+    min-height: 48px;
+    overflow-wrap: anywhere;
+  }
+  .credit-content {
+    padding: 0 16px 18px;
+  }
+  .credit-item .button-row {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .credit-item .button,
+  .credit-item .text-button {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .footer {
+    padding-bottom: max(24px, env(safe-area-inset-bottom));
+  }
+}
+@media (max-width: 480px) {
+  .library-toolbar {
+    align-items: stretch;
+  }
+  .library-toolbar select {
+    width: 100%;
+    max-width: 100%;
+  }
+  .library-entry {
+    padding: 20px;
+  }
+  .video-card {
+    padding: 18px;
+  }
+  .survey-form {
+    padding: 22px 18px;
+  }
+  .rating-row {
+    gap: 4px;
+  }
+  .rating {
+    padding: 8px 4px;
+  }
+  .survey-success .button-row > *,
+  .experience-links .button-row > * {
+    width: 100%;
+  }
+  .experience-links {
+    padding: 24px;
+  }
+  .experience-links .button-row {
+    width: 100%;
+  }
+  .admin-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .admin-stats > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 20px;
+  }
+  .admin-stats span {
+    font-size: 0.85rem;
+  }
+  .admin-stats strong {
+    font-size: 2rem;
+  }
+  .admin-heading > .button {
+    width: 100%;
+  }
+  .admin-filters > label {
+    flex-basis: 100%;
+  }
+  .admin-pagination {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .admin-pagination > span {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+  .admin-pagination .button {
+    flex: 1;
+  }
+  .credit-folder > summary {
+    align-items: flex-start;
+  }
+  .credit-folder-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .credit-folder strong {
+    font-size: 1rem;
+  }
+  .credit-folder .credit-count {
+    min-width: 24px;
+    height: 24px;
+    padding: 0 5px;
+    font-size: 0.75rem;
+  }
+  .credit-folder .expand-sign {
+    font-size: 1.2rem;
+  }
+}

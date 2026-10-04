@@ -1,0 +1,817 @@
+[
+  {
+    "id": "m1",
+    "title": {
+      "es": "Pantallas y salud visual",
+      "en": "Screens & eye health"
+    },
+    "description": {
+      "es": "Dale un respiro a tu mirada. Pequeños ajustes, más comodidad.",
+      "en": "Give your eyes a break. Small adjustments, more comfort."
+    },
+    "color": "lavender",
+    "icon": "eye",
+    "lessons": [
+      {
+        "id": "1.1",
+        "slug": "regla-20-20-20",
+        "title": {
+          "es": "Una pausa para tu mirada",
+          "en": "A break for your eyes"
+        },
+        "intro": {
+          "es": "La regla 20-20-20",
+          "en": "The 20-20-20 rule"
+        },
+        "paragraphs": [
+          {
+            "es": "Al trabajar de cerca, prueba una pausa cada 20 minutos: mira algo a unos 6 metros (20 pies) durante 20 segundos. Parpadea con naturalidad.",
+            "en": "During close-up work, try a break every 20 minutes: look at something about 6 metres (20 feet) away for 20 seconds. Blink naturally."
+          },
+          {
+            "es": "Es una pauta práctica para descansar la vista, no un tratamiento ni una garantía de evitar molestias. Si el dolor o la visión borrosa persisten, consulta a un profesional.",
+            "en": "This is a practical reminder to rest your eyes, not a treatment or a guarantee against discomfort. Seek professional advice for persistent pain or blurred vision."
+          }
+        ],
+        "takeaway": {
+          "es": "Mira lejos. Relaja el enfoque. Vuelve con calma.",
+          "en": "Look away. Relax your focus. Return gently."
+        },
+        "sources": [
+          {
+            "id": "aao",
+            "name": "American Academy of Ophthalmology",
+            "url": "https://aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/eyes-v2.svg",
+          "alt": {
+            "es": "Ojo y ventana abierta a un paisaje lejano, con un reloj que representa una pausa visual.",
+            "en": "An eye and a window overlooking a distant landscape, with a clock representing a visual break."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/iF9N4bMvIac",
+          "video_title": {
+            "es": "La regla 20-20-20",
+            "en": "The 20-20-20 rule"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "eyes",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {}
+      },
+      {
+        "id": "1.2",
+        "slug": "configuracion-dispositivo",
+        "title": {
+          "es": "Tu pantalla, a tu medida",
+          "en": "Make your screen feel right"
+        },
+        "intro": {
+          "es": "Configuración del dispositivo",
+          "en": "Device settings"
+        },
+        "paragraphs": [
+          {
+            "es": "Ajusta el tamaño del texto y el brillo para leer sin esfuerzo. Evita reflejos y elige el tema que te resulte cómodo según la iluminación.",
+            "en": "Adjust text size and brightness for comfortable reading. Avoid glare and choose a theme that suits your lighting."
+          },
+          {
+            "es": "Los filtros cálidos cambian el color de la pantalla. La AAO no recomienda gafas de bloqueo de luz azul para prevenir fatiga digital por falta de evidencia suficiente. El modo oscuro no sustituye las pausas.",
+            "en": "Warm filters change the screen colour. The AAO does not recommend blue-light-blocking glasses to prevent digital eye strain because supporting evidence is insufficient. Dark mode does not replace breaks."
+          }
+        ],
+        "takeaway": {
+          "es": "La comodidad depende del entorno, no de un único modo de pantalla.",
+          "en": "Comfort depends on your surroundings, not one screen mode."
+        },
+        "sources": [
+          {
+            "id": "aao",
+            "name": "American Academy of Ophthalmology",
+            "url": "https://aao.org/eye-health/tips-prevention/are-computer-glasses-worth-it",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/display-v2.svg",
+          "alt": {
+            "es": "Pantalla con temas claro y oscuro junto a controles para ajustar su configuración.",
+            "en": "A screen with light and dark themes beside display adjustment controls."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/6t60pHQbfdk",
+          "video_title": {
+            "es": "Configuración del dispositivo",
+            "en": "Device settings"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "display",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {}
+      }
+    ]
+  },
+  {
+    "id": "m2",
+    "title": {
+      "es": "Postura y movimiento",
+      "en": "Posture & movement"
+    },
+    "description": {
+      "es": "Un espacio que te cuide y pausas que te pongan en movimiento.",
+      "en": "A workspace that supports you and breaks that get you moving."
+    },
+    "color": "mint",
+    "icon": "body",
+    "lessons": [
+      {
+        "id": "2.1",
+        "slug": "espacio-ergonomico",
+        "title": {
+          "es": "Haz espacio para estar bien",
+          "en": "Make room to feel better"
+        },
+        "intro": {
+          "es": "Configuración ergonómica",
+          "en": "An ergonomic setup"
+        },
+        "paragraphs": [
+          {
+            "es": "Coloca la pantalla frente a ti, con su parte superior a la altura de los ojos o ligeramente por debajo. Apoya los pies y la espalda; mantén los hombros relajados.",
+            "en": "Place the screen in front of you, with its top at or slightly below eye level. Support your feet and back; keep your shoulders relaxed."
+          },
+          {
+            "es": "Acerca teclado y ratón para evitar estirarte. Ajusta el puesto a tu cuerpo y cambia de posición a lo largo del día.",
+            "en": "Keep the keyboard and mouse close to avoid reaching. Adapt the workspace to your body and change position throughout the day."
+          }
+        ],
+        "takeaway": {
+          "es": "La mejor configuración es la que puedes ajustar a ti.",
+          "en": "The best setup is one you can adjust to yourself."
+        },
+        "sources": [
+          {
+            "id": "osha",
+            "name": "OSHA · Computer Workstations",
+            "url": "https://www.osha.gov/etools/computer-workstations/checklists/",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/ergonomics-v2.svg",
+          "alt": {
+            "es": "Persona con espalda apoyada, pies en el suelo y antebrazos alineados con el teclado; el borde superior de la pantalla queda justo debajo de la mirada.",
+            "en": "A person with back support, feet on the floor and forearms aligned with the keyboard; the screen’s top edge is just below eye level."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/sjtxhTkDrL0",
+          "video_title": {
+            "es": "Configuración ergonómica",
+            "en": "An ergonomic setup"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": [
+            {
+              "url": "https://www.youtube-nocookie.com/embed/74bCyEpFEdI",
+              "title": {
+                "es": "Configuración ergonómica · Otra perspectiva",
+                "en": "An ergonomic setup · Another perspective"
+              }
+            }
+          ]
+        },
+        "interaction": "ergonomics",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {
+          "checklist": [
+            {
+              "es": "Pies apoyados y espacio para las piernas",
+              "en": "Feet supported and room for my legs"
+            },
+            {
+              "es": "Espalda apoyada y hombros relajados",
+              "en": "Back supported and shoulders relaxed"
+            },
+            {
+              "es": "Pantalla frente a mí, a una altura cómoda",
+              "en": "Screen in front of me at a comfortable height"
+            },
+            {
+              "es": "Teclado y ratón cerca, muñecas alineadas",
+              "en": "Keyboard and mouse close, wrists aligned"
+            },
+            {
+              "es": "Pausas y cambios de postura durante el día",
+              "en": "Breaks and changes of position throughout the day"
+            }
+          ]
+        }
+      },
+      {
+        "id": "2.2",
+        "slug": "pausa-activa",
+        "title": {
+          "es": "Muévete entre ideas",
+          "en": "Move between ideas"
+        },
+        "intro": {
+          "es": "Estiramiento rápido",
+          "en": "A quick movement break"
+        },
+        "paragraphs": [
+          {
+            "es": "Alterna el trabajo sentado con movimiento cómodo. Estas tarjetas son propuestas suaves de pausa, no ejercicios de rehabilitación.",
+            "en": "Alternate seated work with comfortable movement. These cards offer gentle break ideas, not rehabilitation exercises."
+          },
+          {
+            "es": "Respira con normalidad, evita rebotes y no fuerces el rango de movimiento. Detente si sientes dolor, mareo u hormigueo.",
+            "en": "Breathe normally, avoid bouncing and do not force your range of motion. Stop if you feel pain, dizziness or tingling."
+          }
+        ],
+        "takeaway": {
+          "es": "Una pausa breve también puede ser caminar y cambiar de postura.",
+          "en": "A short break can simply mean walking and changing position."
+        },
+        "sources": [
+          {
+            "id": "osha",
+            "name": "OSHA · Computer Workstations",
+            "url": "https://www.osha.gov/etools/computer-workstations/checklists/",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/stretch-v2.svg",
+          "alt": {
+            "es": "Tres personas haciendo movimientos suaves de brazos, hombros y piernas durante una pausa.",
+            "en": "Three people making gentle arm, shoulder and leg movements during a break."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/admer1XX8YM",
+          "video_title": {
+            "es": "Estiramiento rápido",
+            "en": "A quick movement break"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "stretch",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {
+          "cards": [
+            {
+              "title": {
+                "es": "Suelta los hombros",
+                "en": "Release your shoulders"
+              },
+              "description": {
+                "es": "Eleva suavemente los hombros y suéltalos. Mantén la respiración natural.",
+                "en": "Gently lift and release your shoulders. Keep breathing naturally."
+              },
+              "seconds": 30
+            },
+            {
+              "title": {
+                "es": "Descansa las manos",
+                "en": "Rest your hands"
+              },
+              "description": {
+                "es": "Abre y cierra las manos con suavidad, sin forzar los dedos ni las muñecas.",
+                "en": "Gently open and close your hands without forcing your fingers or wrists."
+              },
+              "seconds": 30
+            },
+            {
+              "title": {
+                "es": "Ponte en movimiento",
+                "en": "Get moving"
+              },
+              "description": {
+                "es": "Levántate si te resulta cómodo y camina un poco por tu espacio.",
+                "en": "Stand up if comfortable and walk around your space."
+              },
+              "seconds": 60
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "m3",
+    "title": {
+      "es": "Seguridad digital",
+      "en": "Digital security"
+    },
+    "description": {
+      "es": "Protege tus cuentas. Aprende a reconocer lo que no encaja.",
+      "en": "Protect your accounts. Learn to spot what does not add up."
+    },
+    "color": "blue",
+    "icon": "shield",
+    "lessons": [
+      {
+        "id": "3.1",
+        "slug": "autenticacion-segura",
+        "title": {
+          "es": "Tu vida digital, bien protegida",
+          "en": "Keep your digital life protected"
+        },
+        "intro": {
+          "es": "Autenticación segura",
+          "en": "Secure authentication"
+        },
+        "paragraphs": [
+          {
+            "es": "Usa contraseñas largas y únicas con un gestor. NIST exige al menos 15 caracteres en sistemas que usan contraseña como único factor; no es una garantía universal de seguridad.",
+            "en": "Use long, unique passwords with a manager. NIST requires at least 15 characters for password-only authentication; this is not a universal guarantee of security."
+          },
+          {
+            "es": "Activa autenticación multifactor y, cuando sea posible, claves de acceso o llaves resistentes al phishing. Este medidor es orientativo: no detecta filtraciones ni conoce cómo creaste una contraseña.",
+            "en": "Enable multifactor authentication and, where available, phishing-resistant passkeys or security keys. This meter is educational: it cannot detect breaches or know how you chose a password."
+          },
+          {
+            "es": "En Colombia, la Ley 1581 de 2012 respalda tu derecho a conocer y corregir tus datos personales, y la política CONPES 3995 impulsa la seguridad digital de la ciudadanía.",
+            "en": "In Colombia, Law 1581 of 2012 supports your right to access and correct your personal data, and the CONPES 3995 policy promotes citizens' digital security."
+          }
+        ],
+        "takeaway": {
+          "es": "Prueba con texto inventado. No introduzcas una contraseña real.",
+          "en": "Try invented text. Do not enter a real password."
+        },
+        "sources": [
+          {
+            "id": "nist",
+            "name": "NIST SP 800-63B-4",
+            "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-conpes",
+            "name": "DNP · CONPES 3995 de 2020",
+            "url": "https://www.dnp.gov.co/LaEntidad_/subdireccion-general-prospectiva-desarrollo-nacional/direccion-desarrollo-digital/Paginas/documentos-conpes-confianza-y-seguridad-digital.aspx",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-ley1581",
+            "name": "Ley 1581 de 2012 · SIC",
+            "url": "https://sedeelectronica.sic.gov.co/transparencia/normativa/ley-estatutaria-1581-de-2012",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/password-v2.svg",
+          "alt": {
+            "es": "Formulario de acceso protegido por un escudo, un candado y una llave.",
+            "en": "A sign-in form protected by a shield, a padlock and a key."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/boQKl5BkPfs",
+          "video_title": {
+            "es": "Autenticación segura",
+            "en": "Secure authentication"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "password",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {}
+      },
+      {
+        "id": "3.2",
+        "slug": "detectar-phishing",
+        "title": {
+          "es": "Antes de hacer clic, observa",
+          "en": "Pause before you click"
+        },
+        "intro": {
+          "es": "Identificación de phishing",
+          "en": "Recognising phishing"
+        },
+        "paragraphs": [
+          {
+            "es": "Desconfía de mensajes que presionan para actuar, piden códigos o solicitan datos sensibles. Comprueba el remitente y el destino real de los enlaces.",
+            "en": "Be cautious of messages that pressure you to act, request codes or ask for sensitive information. Check the sender and the actual link destination."
+          },
+          {
+            "es": "Abre la web oficial por tu cuenta o contacta a la institución por un canal conocido. Reporta el mensaje sospechoso. Una buena redacción o un candado HTTPS no prueban que sea seguro.",
+            "en": "Open the official website yourself or contact the organisation through a known channel. Report suspicious messages. Good spelling or an HTTPS padlock does not prove safety."
+          },
+          {
+            "es": "En Colombia, el programa En TIC Confío del MinTIC orienta con materiales gratuitos sobre estos riesgos.",
+            "en": "In Colombia, MinTIC's En TIC Confío programme offers free guidance on these risks."
+          }
+        ],
+        "takeaway": {
+          "es": "Los ejemplos del juego son ficticios; reproducen señales habituales.",
+          "en": "The game uses fictional examples of common warning signs."
+        },
+        "sources": [
+          {
+            "id": "cisa",
+            "name": "CISA · Recognize and Report Phishing",
+            "url": "https://www.cisa.gov/secure-our-world/recognize-and-report-phishing",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-mintic",
+            "name": "MinTIC · En TIC Confío",
+            "url": "https://www.mintic.gov.co/portal/715/w3-article-15261.html",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/phishing-v2.svg",
+          "alt": {
+            "es": "Correo con un enlace y una lupa que destaca una señal de alerta.",
+            "en": "An email with a link and a magnifying glass highlighting a warning sign."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/UuuAlP7ay6U",
+          "video_title": {
+            "es": "Identificación de phishing",
+            "en": "Recognising phishing"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "phishing",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {
+          "emails": [
+            {
+              "sender": "soporte@campus-seguro.example",
+              "subject": {
+                "es": "Tu matrícula será cancelada hoy",
+                "en": "Your enrolment will be cancelled today"
+              },
+              "body": {
+                "es": "Confirma tu contraseña y código de acceso en campus-verificacion.example en los próximos 15 minutos.",
+                "en": "Confirm your password and access code at campus-verificacion.example within 15 minutes."
+              },
+              "explanation": {
+                "es": "La amenaza, la urgencia y la solicitud de un código son señales de phishing. No uses ese enlace.",
+                "en": "The threat, urgency and request for a code are phishing signals. Do not use that link."
+              },
+              "is_phishing": true
+            },
+            {
+              "sender": "biblioteca@universidad.example",
+              "subject": {
+                "es": "Recordatorio de devolución",
+                "en": "Library return reminder"
+              },
+              "body": {
+                "es": "Tu préstamo vence el viernes. Puedes revisar la fecha entrando al portal de la biblioteca desde tu marcador habitual.",
+                "en": "Your loan is due Friday. Check the date by opening the library portal from your usual bookmark."
+              },
+              "explanation": {
+                "es": "No pide secretos ni incluye un enlace urgente. Parece coherente, pero el remitente puede falsificarse: confirma en el portal que ya conoces.",
+                "en": "No secrets or urgent links are requested. It looks consistent, but sender addresses can be spoofed: confirm in the portal you already know."
+              },
+              "is_phishing": false
+            },
+            {
+              "sender": "becas@ayudas-estudiante.example",
+              "subject": {
+                "es": "¡Tu beca está aprobada!",
+                "en": "Your scholarship is approved!"
+              },
+              "body": {
+                "es": "Paga una comisión de activación hoy y envía una foto de tu documento para recibir el dinero.",
+                "en": "Pay an activation fee today and send a photo of your ID to receive the money."
+              },
+              "explanation": {
+                "es": "Una beca inesperada que exige pagos y documentos por correo es sospechosa. Consulta a la oficina de becas por un canal conocido.",
+                "en": "An unexpected scholarship requiring payments and ID by email is suspicious. Contact your scholarship office through a known channel."
+              },
+              "is_phishing": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "m4",
+    "title": {
+      "es": "Tiempo y enfoque",
+      "en": "Time & focus"
+    },
+    "description": {
+      "es": "Menos distracciones, más intención en tus horas de estudio.",
+      "en": "Fewer distractions, more intention in your study time."
+    },
+    "color": "peach",
+    "icon": "clock",
+    "lessons": [
+      {
+        "id": "4.1",
+        "slug": "pomodoro",
+        "title": {
+          "es": "Una cosa a la vez",
+          "en": "One thing at a time"
+        },
+        "intro": {
+          "es": "La técnica Pomodoro",
+          "en": "The Pomodoro technique"
+        },
+        "paragraphs": [
+          {
+            "es": "Elige una tarea concreta, trabaja durante un bloque y toma una pausa. Un punto de partida habitual es 25 minutos de foco y 5 de descanso.",
+            "en": "Choose one specific task, work for a set block and take a break. A common starting point is 25 minutes of focus and 5 minutes of rest."
+          },
+          {
+            "es": "Después de varios bloques, descansa más tiempo. Ajusta la duración a tu tarea: la técnica organiza el estudio, pero no garantiza aprender más ni funciona igual para todos.",
+            "en": "After several blocks, take a longer break. Adapt the duration to your task: the technique structures study, but does not guarantee better learning or suit everyone equally."
+          }
+        ],
+        "takeaway": {
+          "es": "Define un objetivo pequeño antes de iniciar el reloj.",
+          "en": "Set a small goal before starting the clock."
+        },
+        "sources": [
+          {
+            "id": "pomodoro",
+            "name": "University of Northern British Columbia",
+            "url": "https://www.unbc.ca/sites/default/files/sections/academic-success-centre/pomodoro-technique.pdf",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/pomodoro-v2.svg",
+          "alt": {
+            "es": "Temporizador junto a una tarea completada y una planta; los bloques de enfoque se separan por pequeñas pausas.",
+            "en": "A timer beside a completed task and a plant; focus blocks are separated by short breaks."
+          },
+          "video": null,
+          "video_title": null,
+          "review": null
+        },
+        "interaction": "pomodoro",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {}
+      },
+      {
+        "id": "4.2",
+        "slug": "menos-distracciones",
+        "title": {
+          "es": "Cuida tu espacio de atención",
+          "en": "Protect your attention space"
+        },
+        "intro": {
+          "es": "Bloqueadores de distracciones",
+          "en": "Distraction blockers"
+        },
+        "paragraphs": [
+          {
+            "es": "Los temporizadores de apps y los bloqueadores añaden una pausa antes de abrir redes sociales. Elige una herramienta compatible con tus dispositivos.",
+            "en": "App timers and blockers add a pause before opening social media. Choose a tool that works on your devices."
+          },
+          {
+            "es": "Empieza con una franja de estudio. Conserva acceso a recursos académicos y contactos importantes. Revisa permisos, compatibilidad y condiciones antes de instalar extensiones.",
+            "en": "Start with one study period. Keep academic resources and important contacts accessible. Review permissions, compatibility and terms before installing extensions."
+          }
+        ],
+        "takeaway": {
+          "es": "Esta página compara herramientas; no bloquea otras aplicaciones.",
+          "en": "This page compares tools; it does not block other applications."
+        },
+        "sources": [
+          {
+            "id": "google",
+            "name": "Google · Android Help",
+            "url": "https://support.google.com/android/answer/9346420?hl=en",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "apple",
+            "name": "Apple · Screen Time",
+            "url": "https://support.apple.com/en-gb/guide/iphone/iphbfa595995/18.0/ios/18.0",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "leech",
+            "name": "James Anderson · LeechBlock",
+            "url": "https://www.proginosko.com/leechblock/",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/blockers-v2.svg",
+          "alt": {
+            "es": "Ventana de estudio con un libro abierto, distracciones en segundo plano y un escudo de enfoque.",
+            "en": "A study window with an open book, distractions in the background and a focus shield."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/XoChDJgVRuw",
+          "video_title": {
+            "es": "Bloqueadores de distracciones",
+            "en": "Distraction blockers"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "blockers",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {
+          "tools": [
+            {
+              "name": "Digital Wellbeing",
+              "platform": "Android",
+              "icon": "leaf",
+              "url": "https://support.google.com/android/answer/9346420",
+              "description": {
+                "es": "Los temporizadores limitan el tiempo por app y el modo Enfoque pausa apps elegidas. Las opciones dependen del dispositivo.",
+                "en": "App timers limit per-app use and Focus mode pauses selected apps. Options depend on your device."
+              }
+            },
+            {
+              "name": "Screen Time",
+              "platform": "iOS",
+              "icon": "clock",
+              "url": "https://support.apple.com/en-gb/guide/iphone/iphbfa595995/18.0/ios/18.0",
+              "description": {
+                "es": "Permite revisar tu uso y programar límites o tiempo de inactividad. Los nombres y opciones cambian según la versión.",
+                "en": "Review your usage and schedule limits or downtime. Names and options vary by version."
+              }
+            },
+            {
+              "name": "LeechBlock NG",
+              "platform": "browser",
+              "icon": "shield",
+              "url": "https://www.proginosko.com/leechblock/",
+              "description": {
+                "es": "Extensión para limitar sitios por horario en navegadores compatibles. Revisa sus permisos de acceso a sitios antes de instalarla.",
+                "en": "An extension that limits sites by schedule in supported browsers. Review website access permissions before installing."
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "m5",
+    "title": {
+      "es": "Mente y desconexión",
+      "en": "Mind & disconnection"
+    },
+    "description": {
+      "es": "Recupera momentos de calma, dentro y fuera de la pantalla.",
+      "en": "Make room for calm, on and off your screen."
+    },
+    "color": "rose",
+    "icon": "leaf",
+    "lessons": [
+      {
+        "id": "5.1",
+        "slug": "notificaciones",
+        "title": {
+          "es": "No todo necesita tu atención",
+          "en": "Not everything needs your attention"
+        },
+        "intro": {
+          "es": "Bucles de dopamina y notificaciones",
+          "en": "Dopamine loops & notifications"
+        },
+        "paragraphs": [
+          {
+            "es": "Una notificación puede desviar la atención incluso sin abrir el teléfono. Un estudio experimental de Stothart y colaboradores observó interferencia en una tarea de atención; no mide el efecto exacto en tu vida diaria.",
+            "en": "A notification can divert attention even without opening your phone. An experiment by Stothart and colleagues found interference in an attention task; it does not measure the exact effect in your daily life."
+          },
+          {
+            "es": "«Bucle de dopamina» es una simplificación popular, no un diagnóstico. Esta simulación representa interrupciones, no niveles de dopamina, ansiedad ni daño cerebral. Prueba silenciar avisos no esenciales.",
+            "en": "“Dopamine loop” is a popular simplification, not a diagnosis. This simulation represents interruptions, not dopamine levels, anxiety or brain damage. Try muting non-essential alerts."
+          },
+          {
+            "es": "Según el DANE (2023), el 63,9 % de los hogares colombianos tenía conexión a internet: una notificación puede alcanzarte en casi cualquier lugar.",
+            "en": "According to DANE (2023), 63.9% of Colombian households had an internet connection: a notification can reach you almost anywhere."
+          }
+        ],
+        "takeaway": {
+          "es": "Elige cuándo revisar tus mensajes y permite excepciones importantes.",
+          "en": "Choose when to check messages and allow important exceptions."
+        },
+        "sources": [
+          {
+            "id": "attention",
+            "name": "Stothart, Mitchum & Yehnert (2015)",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/26121498/",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-mintic",
+            "name": "MinTIC · En TIC Confío",
+            "url": "https://www.mintic.gov.co/portal/715/w3-article-15261.html",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-dane",
+            "name": "DANE · TIC en hogares 2023",
+            "url": "https://www.dane.gov.co/files/operaciones/TICH/bol-TICH-2023.pdf",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/notifications-v2.svg",
+          "alt": {
+            "es": "Teléfono con una campana silenciada, un control de notificaciones y mensajes alrededor.",
+            "en": "A phone with a muted bell, a notification control and surrounding messages."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/TG9pqpRdtU8",
+          "video_title": {
+            "es": "Bucles de dopamina y notificaciones",
+            "en": "Dopamine loops & notifications"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "notifications",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {}
+      },
+      {
+        "id": "5.2",
+        "slug": "rutina-sueno",
+        "title": {
+          "es": "Desconecta para descansar",
+          "en": "Disconnect to rest"
+        },
+        "intro": {
+          "es": "Rutinas previas al sueño",
+          "en": "A wind-down routine"
+        },
+        "paragraphs": [
+          {
+            "es": "El CDC recomienda horarios regulares y apagar dispositivos al menos 30 minutos antes de dormir. Aquí proponemos una hora de desconexión como rutina práctica, no como umbral médico.",
+            "en": "The CDC recommends regular sleep times and turning devices off at least 30 minutes before bed. Here we suggest a one-hour wind-down as a practical routine, not a medical threshold."
+          },
+          {
+            "es": "Prepara el día siguiente, baja la iluminación y elige una actividad tranquila fuera de la pantalla. Si las dificultades para dormir persisten, busca orientación profesional.",
+            "en": "Prepare for tomorrow, dim the lights and choose a quiet activity away from screens. Seek professional guidance for persistent sleep difficulties."
+          },
+          {
+            "es": "En Colombia, la Universidad del Rosario (2023) advirtió que el uso nocturno del móvil deteriora la calidad del sueño en universitarios.",
+            "en": "In Colombia, Universidad del Rosario (2023) warned that night-time phone use harms sleep quality in university students."
+          }
+        ],
+        "takeaway": {
+          "es": "Una rutina sencilla y constante vale más que una noche perfecta.",
+          "en": "A simple, consistent routine matters more than one perfect night."
+        },
+        "sources": [
+          {
+            "id": "cdc",
+            "name": "CDC · About Sleep",
+            "url": "https://www.cdc.gov/sleep/about/",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          },
+          {
+            "id": "co-rosario",
+            "name": "Univ. del Rosario · Móviles y sueño (2023)",
+            "url": "https://urosario.edu.co/en/node/9049",
+            "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing."
+          }
+        ],
+        "media": {
+          "image": "/media/sleep-v2.svg",
+          "alt": {
+            "es": "Cama bajo una luna creciente y estrellas, con una mesita, libros y un teléfono de pantalla apagada.",
+            "en": "A bed beneath a crescent moon and stars, beside a table, books and a phone with its screen off."
+          },
+          "video": "https://www.youtube-nocookie.com/embed/fSqMGY3r45k",
+          "video_title": {
+            "es": "Rutinas previas al sueño",
+            "en": "A wind-down routine"
+          },
+          "review": "[VERIFICAR VIDEO]",
+          "extra_videos": []
+        },
+        "interaction": "sleep",
+        "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
+        "interaction_data": {
+          "checklist": [
+            {
+              "es": "Preparo lo necesario para mañana",
+              "en": "Prepare what I need for tomorrow"
+            },
+            {
+              "es": "Silencio avisos no esenciales",
+              "en": "Silence non-essential alerts"
+            },
+            {
+              "es": "Dejo el teléfono fuera de mi alcance",
+              "en": "Leave my phone out of reach"
+            },
+            {
+              "es": "Elijo un libro o una actividad tranquila",
+              "en": "Choose a book or a quiet activity"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
