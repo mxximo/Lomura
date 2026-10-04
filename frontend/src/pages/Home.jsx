@@ -57,6 +57,9 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-copy">
+          <p className="lumora-signature">
+            <span aria-hidden="true" /> Lumora · {t.learn}
+          </p>
           <h1>
             {t.hero1}
             <br />
@@ -79,6 +82,11 @@ export default function Home() {
           {hasStarted && resume && (
             <p className="resume-caption">{tr(resume.intro)}</p>
           )}
+          <ul className="hero-proof" aria-label={lang === "es" ? "Sobre Lumora" : "About Lumora"}>
+            {[t.free, t.accountless, t.bilingual].map((label) => (
+              <li key={label}><Icon name="check" size={14} />{label}</li>
+            ))}
+          </ul>
         </div>
         <div className="hero-art">
           <div className="art-halo" />
@@ -137,6 +145,7 @@ export default function Home() {
                       <Icon name={item.icon} size={20} />
                     </span>
                     {t.intentionOptions[index]}
+                    <Icon name="arrow" size={16} />
                   </button>
                 ))}
               </div>
@@ -293,6 +302,9 @@ export default function Home() {
                     <Icon name={module.icon} size={27} />
                   </span>
                   <span className={`status-pill ${statusClass}`}>{status}</span>
+                </div>
+                <div className="module-art-preview" aria-hidden="true">
+                  <img src={module.lessons[0].media.image} width="600" height="360" loading="lazy" alt="" />
                 </div>
                 <span className="theme-word">{t.topicFocus[index]}</span>
                 <h3>{tr(module.title)}</h3>

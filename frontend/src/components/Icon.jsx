@@ -28,6 +28,7 @@ import {
   Timer,
   ArrowUp,
   Download,
+  X,
 } from "lucide-react";
 
 const icons = {
@@ -43,6 +44,7 @@ const icons = {
   book: BookOpen,
   compass: Compass,
   menu: Menu,
+  close: X,
   globe: Globe,
   privacy: ShieldCheck,
   bell: Bell,

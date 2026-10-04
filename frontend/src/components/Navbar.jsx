@@ -74,7 +74,7 @@ export default function Navbar() {
             aria-controls="primary-nav"
             onClick={() => setOpen(!open)}
           >
-            <Icon name="menu" />
+            <Icon name={open ? "close" : "menu"} />
           </button>
         </div>
       </header>

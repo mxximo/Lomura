@@ -17,6 +17,7 @@ import "./styles/completion.css";
 import "./styles/mobile.css";
 import "./styles/quiz-experience.css";
 import "./styles/refinement.css";
+import "./styles/lumora.css";
 function Fatal() {
   const { t } = useLanguage();
   return (

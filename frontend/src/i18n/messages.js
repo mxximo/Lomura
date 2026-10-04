@@ -112,8 +112,8 @@ export const messages = {
     back: "Volver al inicio",
     learn: "Aprende a tu ritmo",
     eyebrow: "UN ESPACIO PARA TI",
-    hero1: "Más equilibrio.",
-    hero2: "Menos piloto automático.",
+    hero1: "Encuentra tu",
+    hero2: "equilibrio digital.",
     heroDescription:
       "La tecnología es parte de tu vida. Haz que juegue a tu favor. Descubre pequeños hábitos para estudiar, conectar y sentirte mejor.",
     free: "Acceso libre",
@@ -424,8 +424,8 @@ export const messages = {
     back: "Back to home",
     learn: "Learn at your own pace",
     eyebrow: "A LITTLE SPACE FOR YOU",
-    hero1: "More balance.",
-    hero2: "Less autopilot.",
+    hero1: "Find your",
+    hero2: "digital balance.",
     heroDescription:
       "Technology is part of your life. Make it work for you. Discover small habits to study, connect and feel better.",
     free: "Open access",
