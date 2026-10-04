@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse
 from .routers import content, quiz, credits, responses
+from .storage import database
 
 app = FastAPI(title="Digital Wellbeing API", version="1.0.0", docs_url="/api/docs", openapi_url="/api/openapi.json", redoc_url=None)
 app.add_middleware(GZipMiddleware, minimum_size=1000)
@@ -18,6 +19,9 @@ for router in (content.router, quiz.router, credits.router, responses.router):
 
 @app.get("/api/health")
 def health():
+    if os.getenv("DATABASE_URL") or os.getenv("RENDER") == "true":
+        with database() as db:
+            db.execute("SELECT 1")
     return {"status": "ok"}
 
 

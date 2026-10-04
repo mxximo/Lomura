@@ -52,7 +52,7 @@ No se pudo confirmar automáticamente la disponibilidad, el permiso de inserció
 
 ## Almacenamiento y panel
 
-El progreso y las preferencias quedan en el navegador. Las encuestas enviadas y los quizzes completos quedan en `responses.sqlite3`, dentro de `backend/storage` o de `DATA_DIR`. No se solicitan nombres ni correos. El comentario es opcional y recomienda evitar información personal.
+El progreso y las preferencias quedan en el navegador. Con `DATABASE_URL`, las encuestas enviadas y los quizzes completos se guardan en PostgreSQL, en el esquema privado `lumora`. Sin esa variable, el desarrollo local utiliza `responses.sqlite3`, dentro de `backend/storage` o de `DATA_DIR`. En Render se exige PostgreSQL para evitar perder datos al reiniciar. No se solicitan nombres ni correos. El comentario es opcional y recomienda evitar información personal.
 
 La encuesta guarda horas de pantalla, pausas, desconexión antes de dormir, utilidad, hábito elegido, comentario y consentimiento. El quiz guarda las opciones elegidas y el puntaje calculado por el servidor. Las correcciones individuales y los repasos parciales no crean registros.
 
@@ -84,20 +84,21 @@ docker build -t digital-wellbeing:1.1 .
 docker run --rm --name digital-wellbeing -p 8080:8000 --env-file backend/.env -v wellbeing-data:/app/storage digital-wellbeing:1.1
 ```
 
-El contenedor compila React y sirve la API, recursos y rutas profundas como usuario sin privilegios. Configura HTTPS y un volumen persistente en `/app/storage`: sin él, sustituir el contenedor pierde los datos. SQLite está pensado para un único servicio; varias réplicas independientes necesitan una base de datos compartida.
+El contenedor compila React y sirve la API, recursos y rutas profundas como usuario sin privilegios. Para Render gratuito configura PostgreSQL mediante `DATABASE_URL`; pasos en [DEPLOY-RENDER.md](DEPLOY-RENDER.md). Si eliges SQLite en otro hosting, configura un volumen persistente en `/app/storage`: sin él, sustituir el contenedor pierde los datos. SQLite está pensado para un único servicio; varias réplicas independientes necesitan PostgreSQL compartido.
 
 El Dockerfile está preparado, pero el contenedor no se ha ejecutado aquí. No se ha contratado hosting ni publicado un dominio. Después de desplegar, verifica `/api/health`, una ruta profunda, `/admin`, una encuesta y su exportación.
 
 | Variable | Uso |
 | --- | --- |
 | ADMIN_PASSWORD | Contraseña privada, mínimo 12 caracteres |
+| DATABASE_URL | URI PostgreSQL privada; Supabase Session pooler en puerto 5432 |
 | DATA_DIR | Directorio persistente de SQLite; Docker: /app/storage |
 | PORT | Puerto del contenedor, 8000 por defecto |
 | FRONTEND_DIST | Ubicación opcional del frontend compilado |
 | ALLOWED_ORIGINS | Orígenes CORS exactos; por defecto localhost:5173 y 127.0.0.1:5173 |
 | VITE_API_URL | Vacía para frontend y API en el mismo dominio |
 
-No copies `backend/.env` al frontend ni al repositorio. `.dockerignore` excluye datos y credenciales locales. Haz copias con la API de backup de SQLite o con el servicio detenido; la carpeta de datos nunca se sirve públicamente.
+No copies `backend/.env` al frontend ni al repositorio. `.dockerignore` excluye datos y credenciales locales. Para SQLite haz copias con su API de backup o con el servicio detenido; para PostgreSQL usa `pg_dump`. La carpeta local de datos nunca se sirve públicamente.
 
 ## API y pruebas
 

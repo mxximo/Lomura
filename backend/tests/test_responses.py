@@ -10,8 +10,17 @@ from app.content_store import questions
 from app.storage import database
 
 
-@pytest.fixture
-def client(tmp_path, monkeypatch):
+@pytest.fixture(params=["sqlite", "postgres"])
+def client(tmp_path, monkeypatch, request):
+    monkeypatch.delenv("DATABASE_URL", raising=False)
+    monkeypatch.delenv("RENDER", raising=False)
+    if request.param == "postgres":
+        test_url = os.getenv("TEST_POSTGRES_URL")
+        if not test_url:
+            pytest.skip("TEST_POSTGRES_URL needed for PostgreSQL integration tests")
+        monkeypatch.setenv("DATABASE_URL", test_url)
+        with database() as db:
+            db.execute("TRUNCATE responses, sessions, login_limits")
     monkeypatch.setenv("DATA_DIR", str(tmp_path))
     monkeypatch.setenv("ADMIN_PASSWORD", "test-only-long-password")
     with TestClient(app) as c:
@@ -46,7 +55,7 @@ def test_persistence_idempotency_and_private_export(client):
     client.post("/api/admin/logout")
     assert client.get("/api/admin/export").status_code == 401
     with database() as db:
-        assert db.execute("SELECT COUNT(*) FROM responses").fetchone()[0] == 1
+        assert db.execute("SELECT COUNT(*) AS count FROM responses").fetchone()["count"] == 1
 
 
 @pytest.mark.parametrize("change", [{"consent":False}, {"screen_hours":25}, {"usefulness":0}, {"goal":"other"}, {"comment":"x"*1001}, {"name":"private"}])
@@ -111,6 +120,8 @@ def test_filtered_analysis_readable_export_and_dictionary(client):
 
 
 def test_legacy_database_migration_keeps_existing_responses(client):
+    if os.getenv("DATABASE_URL"):
+        pytest.skip("Legacy migration applies only to SQLite files")
     path = os.path.join(os.environ["DATA_DIR"], "responses.sqlite3")
     with sqlite3.connect(path) as db:
         db.execute("CREATE TABLE responses (id TEXT PRIMARY KEY, kind TEXT NOT NULL, created_at TEXT NOT NULL, language TEXT NOT NULL, payload TEXT NOT NULL, score INTEGER, total INTEGER)")

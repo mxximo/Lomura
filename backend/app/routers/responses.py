@@ -94,10 +94,10 @@ def login(payload: Login, request: Request, response: Response):
     now = time.time()
     with database() as db:
         db.execute("DELETE FROM login_limits WHERE reset < ?", (now,))
-        db.execute("INSERT OR IGNORE INTO login_limits VALUES (?, 0, ?)", (address, now + 300))
+        db.execute("INSERT INTO login_limits VALUES (?, 0, ?) ON CONFLICT (address) DO NOTHING", (address, now + 300))
         # Serialize concurrent guesses across all API workers.
         db.execute("UPDATE login_limits SET attempts=attempts+1 WHERE address=?", (address,))
-        attempts = db.execute("SELECT attempts FROM login_limits WHERE address=?", (address,)).fetchone()[0]
+        attempts = db.execute("SELECT attempts FROM login_limits WHERE address=?", (address,)).fetchone()["attempts"]
     if attempts > 5:
         raise HTTPException(429, "Too many attempts. Try again in five minutes", headers={"Retry-After": "300"})
     if not secrets.compare_digest(digest(payload.password), digest(password)):
@@ -140,7 +140,7 @@ def filters(kind: Literal["all", "survey", "quiz"] = "all", start: date | None =
 def list_responses(query=Depends(filters), page: int = Query(default=1, ge=1)):
     where, values = query
     with database() as db:
-        total = db.execute("SELECT COUNT(*) FROM responses" + where, values).fetchone()[0]
+        total = db.execute("SELECT COUNT(*) AS count FROM responses" + where, values).fetchone()["count"]
         rows = db.execute("SELECT * FROM responses" + where + " ORDER BY created_at DESC LIMIT 20 OFFSET ?", [*values, (page-1)*20]).fetchall()
         stats = db.execute("SELECT kind, COUNT(*) count, AVG(score*100.0/total) average FROM responses" + where + " GROUP BY kind", values).fetchall()
         goals, usefulness = Counter(), Counter()
