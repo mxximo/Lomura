@@ -12,21 +12,10 @@ jobs:
           POSTGRES_DB: lumora_test
         ports: ['5432:5432']
         options: >-
-          --health-cmd pg_isready
+          --health-cmd "pg_isready -U lumora_test -d lumora_test"
           --health-interval 5s
           --health-timeout 5s
           --health-retries 10
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-      - run: pip install -r backend/requirements-dev.txt
-      - run: python -m pytest -c backend/pytest.ini backend/tests -q
-        env:
-          TEST_POSTGRES_URL: postgresql://lumora_test:ci-only-password@localhost:5432/lumora_test
-  frontend:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,3 +27,10 @@ jobs:
         working-directory: frontend
       - run: npm run build
         working-directory: frontend
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r backend/requirements-dev.txt
+      - run: python -m pytest -c backend/pytest.ini backend/tests -q
+        env:
+          TEST_POSTGRES_URL: postgresql://lumora_test:ci-only-password@localhost:5432/lumora_test
