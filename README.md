@@ -125,7 +125,7 @@ npm run test:e2e
 
 No ejecutes las pruebas de encuesta en producción: crean respuestas ficticias. La inspección con axe complementa la revisión visual y no sustituye una auditoría con lector de pantalla. Antes de publicar completa la revisión académica y bibliográfica marcada en los JSON. Las prácticas no sustituyen atención médica.
 
-Las diez ilustraciones de las lecciones son SVG originales, compartidos por las tarjetas y los videos, con texto alternativo en español e inglés. Se regeneran desde la raíz con `node scripts/build-lesson-art.cjs`; los archivos activos terminan en `-v2.svg`. Sus atribuciones están en `backend/app/data/credits.json`.
+Las diez lecciones usan fotografías de Pexels alojadas en `frontend/public/media/photos/`, con variantes WebP de 480 y 960 px y textos alternativos bilingües. Autores, enlaces y licencia se conservan en `sources.json` y en `backend/app/data/credits.json`. Los SVG anteriores permanecen disponibles como material histórico; `scripts/build-lesson-art.cjs` regenera esas ilustraciones, no las fotografías activas.
 
 La marca pública es Lumora: «Encuentra tu equilibrio digital». Su símbolo vectorial está en `frontend/public/media/lumora.svg`. Ejecuta `node scripts/build-brand-icons.cjs` desde la raíz para generar favicon SVG, ICO de 16/32/48 px e icono móvil de 180 px; requiere las dependencias de desarrollo del frontend y Chromium de Playwright.
 

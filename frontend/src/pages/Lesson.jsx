@@ -1,3 +1,4 @@
+import LessonImage from "../components/LessonImage";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
@@ -170,7 +171,7 @@ export default function Lesson() {
             <div className="lesson-reading">
               <GlassCard className="lesson-text">
                 <ReadingScale />
-                <img
+                <LessonImage
                   className="lesson-art"
                   src={lesson.media.image}
                   alt={tr(lesson.media.alt)}

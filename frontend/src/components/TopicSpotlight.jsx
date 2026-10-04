@@ -1,3 +1,4 @@
+import LessonImage from "./LessonImage";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
@@ -176,7 +177,7 @@ export default function TopicSpotlight() {
                 </Link>
               </div>
               <div className="spot-art" aria-hidden="true">
-                <img src={module.lessons[0].media.image} alt="" />
+                <LessonImage src={module.lessons[0].media.image} alt="" />
               </div>
             </div>
             <div className="spot-nav">

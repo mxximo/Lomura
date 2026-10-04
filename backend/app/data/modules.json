@@ -46,10 +46,10 @@
           }
         ],
         "media": {
-          "image": "/media/eyes-v2.svg",
+          "image": "/media/photos/eyes-960.webp",
           "alt": {
-            "es": "Ojo y ventana abierta a un paisaje lejano, con un reloj que representa una pausa visual.",
-            "en": "An eye and a window overlooking a distant landscape, with a clock representing a visual break."
+            "es": "Mujer mirando hacia el exterior a través de una ventana.",
+            "en": "Woman looking outside through a window."
           },
           "video": "https://www.youtube-nocookie.com/embed/iF9N4bMvIac",
           "video_title": {
@@ -97,10 +97,10 @@
           }
         ],
         "media": {
-          "image": "/media/display-v2.svg",
+          "image": "/media/photos/display-960.webp",
           "alt": {
-            "es": "Pantalla con temas claro y oscuro junto a controles para ajustar su configuración.",
-            "en": "A screen with light and dark themes beside display adjustment controls."
+            "es": "Monitor, teclado y ratón en un escritorio de madera.",
+            "en": "Monitor, keyboard and mouse on a wooden desk."
           },
           "video": "https://www.youtube-nocookie.com/embed/6t60pHQbfdk",
           "video_title": {
@@ -163,10 +163,10 @@
           }
         ],
         "media": {
-          "image": "/media/ergonomics-v2.svg",
+          "image": "/media/photos/ergonomics-960.webp",
           "alt": {
-            "es": "Persona con espalda apoyada, pies en el suelo y antebrazos alineados con el teclado; el borde superior de la pantalla queda justo debajo de la mirada.",
-            "en": "A person with back support, feet on the floor and forearms aligned with the keyboard; the screen’s top edge is just below eye level."
+            "es": "Espacio de trabajo con escritorio de madera, monitor y silla.",
+            "en": "Workspace with a wooden desk, monitor and chair."
           },
           "video": "https://www.youtube-nocookie.com/embed/sjtxhTkDrL0",
           "video_title": {
@@ -245,10 +245,10 @@
           }
         ],
         "media": {
-          "image": "/media/stretch-v2.svg",
+          "image": "/media/photos/stretch-960.webp",
           "alt": {
-            "es": "Tres personas haciendo movimientos suaves de brazos, hombros y piernas durante una pausa.",
-            "en": "Three people making gentle arm, shoulder and leg movements during a break."
+            "es": "Mujer haciendo una pausa para estirar los brazos junto a su escritorio.",
+            "en": "Woman taking a break to stretch her arms by her desk."
           },
           "video": "https://www.youtube-nocookie.com/embed/admer1XX8YM",
           "video_title": {
@@ -363,10 +363,10 @@
           }
         ],
         "media": {
-          "image": "/media/password-v2.svg",
+          "image": "/media/photos/password-960.webp",
           "alt": {
-            "es": "Formulario de acceso protegido por un escudo, un candado y una llave.",
-            "en": "A sign-in form protected by a shield, a padlock and a key."
+            "es": "Pantalla de inicio de sesión en un portátil junto a un teléfono y una planta.",
+            "en": "Login screen on a laptop beside a phone and plant."
           },
           "video": "https://www.youtube-nocookie.com/embed/boQKl5BkPfs",
           "video_title": {
@@ -424,10 +424,10 @@
           }
         ],
         "media": {
-          "image": "/media/phishing-v2.svg",
+          "image": "/media/photos/phishing-960.webp",
           "alt": {
-            "es": "Correo con un enlace y una lupa que destaca una señal de alerta.",
-            "en": "An email with a link and a magnifying glass highlighting a warning sign."
+            "es": "Portátil con una conversación de correo electrónico abierta.",
+            "en": "Laptop with an email conversation open."
           },
           "video": "https://www.youtube-nocookie.com/embed/UuuAlP7ay6U",
           "video_title": {
@@ -541,10 +541,10 @@
           }
         ],
         "media": {
-          "image": "/media/pomodoro-v2.svg",
+          "image": "/media/photos/pomodoro-960.webp",
           "alt": {
-            "es": "Temporizador junto a una tarea completada y una planta; los bloques de enfoque se separan por pequeñas pausas.",
-            "en": "A timer beside a completed task and a plant; focus blocks are separated by short breaks."
+            "es": "Persona tomando apuntes en un cuaderno junto a su portátil.",
+            "en": "Person taking notes in a notebook beside a laptop."
           },
           "video": null,
           "video_title": null,
@@ -600,10 +600,10 @@
           }
         ],
         "media": {
-          "image": "/media/blockers-v2.svg",
+          "image": "/media/photos/blockers-960.webp",
           "alt": {
-            "es": "Ventana de estudio con un libro abierto, distracciones en segundo plano y un escudo de enfoque.",
-            "en": "A study window with an open book, distractions in the background and a focus shield."
+            "es": "Escritorio despejado con libro abierto, portátil y una taza de té.",
+            "en": "Clear desk with an open book, laptop and a cup of tea."
           },
           "video": "https://www.youtube-nocookie.com/embed/XoChDJgVRuw",
           "video_title": {
@@ -715,10 +715,10 @@
           }
         ],
         "media": {
-          "image": "/media/notifications-v2.svg",
+          "image": "/media/photos/notifications-960.webp",
           "alt": {
-            "es": "Teléfono con una campana silenciada, un control de notificaciones y mensajes alrededor.",
-            "en": "A phone with a muted bell, a notification control and surrounding messages."
+            "es": "Mano sosteniendo un teléfono con notificaciones en pantalla.",
+            "en": "Hand holding a phone with notifications on screen."
           },
           "video": "https://www.youtube-nocookie.com/embed/TG9pqpRdtU8",
           "video_title": {
@@ -776,10 +776,10 @@
           }
         ],
         "media": {
-          "image": "/media/sleep-v2.svg",
+          "image": "/media/photos/sleep-960.webp",
           "alt": {
-            "es": "Cama bajo una luna creciente y estrellas, con una mesita, libros y un teléfono de pantalla apagada.",
-            "en": "A bed beneath a crescent moon and stars, beside a table, books and a phone with its screen off."
+            "es": "Mujer descansando entre almohadas y sábanas blancas.",
+            "en": "Woman resting among pillows and white bed linen."
           },
           "video": "https://www.youtube-nocookie.com/embed/fSqMGY3r45k",
           "video_title": {

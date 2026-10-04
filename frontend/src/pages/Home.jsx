@@ -1,3 +1,4 @@
+import LessonImage from "../components/LessonImage";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
@@ -279,7 +280,7 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="featured-art" aria-hidden="true">
-                    <img
+                    <LessonImage
                       src={module.lessons[0].media.image}
                       alt=""
                       loading="lazy"
@@ -305,7 +306,7 @@ export default function Home() {
                   <span className={`status-pill ${statusClass}`}>{status}</span>
                 </div>
                 <div className="module-art-preview" aria-hidden="true">
-                  <img src={module.lessons[0].media.image} width="600" height="360" loading="lazy" alt="" />
+                  <LessonImage src={module.lessons[0].media.image} sizes="(max-width: 800px) 90vw, 30vw" loading="lazy" alt="" />
                 </div>
                 <span className="theme-word">{t.topicFocus[index]}</span>
                 <h3>{tr(module.title)}</h3>

@@ -1,0 +1,122 @@
+[
+  {
+    "key": "eyes",
+    "id": 2437901,
+    "author": "Marcelo Chagas",
+    "url": "https://www.pexels.com/photo/close-up-portrait-photo-of-woman-sitting-by-window-looking-outside-2437901/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Mujer mirando hacia el exterior a través de una ventana.",
+      "en": "Woman looking outside through a window."
+    }
+  },
+  {
+    "key": "display",
+    "id": 4245010,
+    "author": "Levent Simsek",
+    "url": "https://www.pexels.com/photo/modern-workspace-with-computer-and-keyboard-4245010/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Monitor, teclado y ratón en un escritorio de madera.",
+      "en": "Monitor, keyboard and mouse on a wooden desk."
+    }
+  },
+  {
+    "key": "ergonomics",
+    "id": 10963243,
+    "author": "Philipp Pistis",
+    "url": "https://www.pexels.com/photo/silver-monitor-on-wooden-table-10963243/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Espacio de trabajo con escritorio de madera, monitor y silla.",
+      "en": "Workspace with a wooden desk, monitor and chair."
+    }
+  },
+  {
+    "key": "stretch",
+    "id": 8546629,
+    "author": "Kaboompics.com",
+    "url": "https://www.pexels.com/photo/a-woman-stretching-on-a-table-8546629/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Mujer haciendo una pausa para estirar los brazos junto a su escritorio.",
+      "en": "Woman taking a break to stretch her arms by her desk."
+    }
+  },
+  {
+    "key": "password",
+    "id": 163097,
+    "author": "Pixabay",
+    "url": "https://www.pexels.com/photo/tuned-on-gray-laptop-computer-163097/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Pantalla de inicio de sesión en un portátil junto a un teléfono y una planta.",
+      "en": "Login screen on a laptop beside a phone and plant."
+    }
+  },
+  {
+    "key": "phishing",
+    "id": 7821764,
+    "author": "RDNE Stock project",
+    "url": "https://www.pexels.com/photo/a-laptop-on-the-table-7821764/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Portátil con una conversación de correo electrónico abierta.",
+      "en": "Laptop with an email conversation open."
+    }
+  },
+  {
+    "key": "pomodoro",
+    "id": 7129013,
+    "author": "Michael Burrows",
+    "url": "https://www.pexels.com/photo/crop-focused-man-writing-in-copybook-and-using-laptop-7129013/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Persona tomando apuntes en un cuaderno junto a su portátil.",
+      "en": "Person taking notes in a notebook beside a laptop."
+    }
+  },
+  {
+    "key": "blockers",
+    "id": 31373574,
+    "author": "seymasungr",
+    "url": "https://www.pexels.com/photo/open-notebook-and-laptop-on-white-desk-31373574/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Escritorio despejado con libro abierto, portátil y una taza de té.",
+      "en": "Clear desk with an open book, laptop and a cup of tea."
+    }
+  },
+  {
+    "key": "notifications",
+    "id": 4979123,
+    "author": "Tranmautritam",
+    "url": "https://www.pexels.com/photo/selective-focus-of-a-person-holding-a-cellphone-4979123/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Mano sosteniendo un teléfono con notificaciones en pantalla.",
+      "en": "Hand holding a phone with notifications on screen."
+    }
+  },
+  {
+    "key": "sleep",
+    "id": 5331094,
+    "author": "Monstera Production",
+    "url": "https://www.pexels.com/photo/sleepy-woman-lying-on-bed-with-alarm-on-smartphone-5331094/",
+    "license": "https://www.pexels.com/license/",
+    "downloaded": "2026-10-03",
+    "alt": {
+      "es": "Mujer descansando entre almohadas y sábanas blancas.",
+      "en": "Woman resting among pillows and white bed linen."
+    }
+  }
+]

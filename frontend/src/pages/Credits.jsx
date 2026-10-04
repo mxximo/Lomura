@@ -13,13 +13,13 @@ export default function Credits() {
       ? {
           source:
             "Referencias que apoyan las lecciones y los datos del recorrido.",
-          art: "Ilustraciones originales del proyecto, reunidas en una colección.",
+          art: "Fotografías de las lecciones e ilustraciones de la marca, con sus fuentes.",
           video: "Enlaces de YouTube compartidos para las lecciones.",
           software: "Tipografías utilizadas y sus licencias.",
         }
       : {
           source: "References supporting the lessons and course facts.",
-          art: "Original project illustrations, collected in one place.",
+          art: "Lesson photographs and brand illustrations, with their sources.",
           video: "YouTube links provided for the lessons.",
           software: "Typefaces and their licenses.",
         };

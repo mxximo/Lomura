@@ -92,3 +92,10 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Comentarios bilingües persistentes con consentimiento, aprobación administrativa, paginación, protección de origen, límite por hora y reintentos por UUID. El panel permite publicar, retirar y descargar CSV protegido contra fórmulas.
 - 24 pruebas Playwright aprobadas en escritorio y móvil emulado: rutas entre 320 y 1920 px, navegación ampliada, envío, moderación, exportación y retirada. Axe sin infracciones detectadas en formulario y menú a 320 px, en ambos temas.
 - Backend: 34 pruebas locales aprobadas; 16 comprobaciones PostgreSQL requieren la base de integración de CI y se omiten localmente. Compilación Vite correcta. Capturas revisadas en `artifacts/editorial-{320,1440}.png`, `artifacts/editorial-menu-320.png` y `artifacts/comments-{320,1440}.png`.
+
+## Fotografías de lecciones
+
+- Diez fotografías obtenidas de Pexels sustituyen las ilustraciones de las lecciones, tarjetas y vistas previas de video. Fuentes y licencia consultadas el 3 de octubre de 2026; créditos existentes actualizados, sin añadir referencias duplicadas.
+- Veinte archivos WebP de 480/960 px suman 465,546 bytes. Se sirven desde el proyecto con srcset, dimensiones estables y descripciones bilingües del encuadre real. El símbolo y la portada de Lumora se conservan.
+- Comprobadas las diez imágenes a 320 y 1440 px en ambos temas (40 cargas sin desbordamiento). Tres matrices de 16 rutas aprobadas a 320, 390 y 1440 px. Backend: 34 pruebas locales aprobadas, 16 de PostgreSQL omitidas localmente. Compilación Vite correcta.
+- Colección revisada en `artifacts/photos-final.jpg` y capturas de ergonomía en `artifacts/photo-ergonomics-{light,dark}-{320,1440}.png`. Fotografías de ambientación: las recomendaciones técnicas se mantienen en el texto y las actividades.

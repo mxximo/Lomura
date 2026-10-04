@@ -1,3 +1,4 @@
+import LessonImage from "./LessonImage";
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import Icon from "./Icon";
@@ -38,7 +39,7 @@ export default function VideoEmbed({ media }) {
           onClick={() => setLoaded(true)}
           aria-label={`${c.loadVideo}: ${tr(media.video_title)}`}
         >
-          {media.image && <img src={media.image} alt="" loading="lazy" />}
+          {media.image && <LessonImage src={media.image} alt="" loading="lazy" />}
           <span className="video-play">
             <Icon name="play" size={26} />
           </span>
