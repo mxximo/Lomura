@@ -128,3 +128,5 @@ No ejecutes las pruebas de encuesta en producción: crean respuestas ficticias. 
 Las diez ilustraciones de las lecciones son SVG originales, compartidos por las tarjetas y los videos, con texto alternativo en español e inglés. Se regeneran desde la raíz con `node scripts/build-lesson-art.cjs`; los archivos activos terminan en `-v2.svg`. Sus atribuciones están en `backend/app/data/credits.json`.
 
 La marca pública es Lumora: «Encuentra tu equilibrio digital». Su símbolo vectorial está en `frontend/public/media/lumora.svg`. Ejecuta `node scripts/build-brand-icons.cjs` desde la raíz para generar favicon SVG, ICO de 16/32/48 px e icono móvil de 180 px; requiere las dependencias de desarrollo del frontend y Chromium de Playwright.
+
+Los comentarios de la portada (`/#comments`) se guardan en la misma base de datos y quedan pendientes hasta su aprobación. En `/admin`, la sección «Comentarios de la comunidad» permite publicar, retirar y exportar todos los comentarios a CSV. El formulario solicita consentimiento y admite alias opcional, con límite de cinco mensajes por hora y protección contra reintentos duplicados. No se publican mensajes de ejemplo.

@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { completion } from "../i18n/completion";
 import { adminRequest, exportResponses, loadResource } from "../services/api";
 import Icon from "../components/Icon";
+import AdminComments from "../components/AdminComments";
 import { refinement } from "../i18n/refinement";
 
 export default function Admin() {
@@ -490,6 +491,7 @@ export default function Admin() {
           </button>
         </div>
       </section>
+      <AdminComments />
     </div>
   );
 }

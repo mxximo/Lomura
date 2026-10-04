@@ -20,7 +20,7 @@ def client(tmp_path, monkeypatch, request):
             pytest.skip("TEST_POSTGRES_URL needed for PostgreSQL integration tests")
         monkeypatch.setenv("DATABASE_URL", test_url)
         with database() as db:
-            db.execute("TRUNCATE responses, sessions, login_limits")
+            db.execute("TRUNCATE responses, sessions, login_limits, comments, comment_limits")
     monkeypatch.setenv("DATA_DIR", str(tmp_path))
     monkeypatch.setenv("ADMIN_PASSWORD", "test-only-long-password")
     with TestClient(app) as c:

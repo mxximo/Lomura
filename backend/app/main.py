@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse
-from .routers import content, quiz, credits, responses
+from .routers import content, quiz, credits, responses, comments
 from .storage import database
 
 app = FastAPI(title="Digital Wellbeing API", version="1.0.0", docs_url="/api/docs", openapi_url="/api/openapi.json", redoc_url=None)
@@ -13,7 +13,7 @@ app.add_middleware(GZipMiddleware, minimum_size=1000)
 app.add_middleware(CORSMiddleware,
     allow_origins=[s.strip() for s in os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if s.strip()],
     allow_credentials=False, allow_methods=["GET", "POST"], allow_headers=["Content-Type"])
-for router in (content.router, quiz.router, credits.router, responses.router):
+for router in (content.router, quiz.router, credits.router, responses.router, comments.router):
     app.include_router(router, prefix="/api")
 
 
@@ -34,7 +34,7 @@ async def response_headers(request, call_next):
     response.headers["X-Content-Type-Options"] = "nosniff"
     response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
     response.headers["X-Frame-Options"] = "SAMEORIGIN"
-    if request.url.path.startswith(("/api/quiz", "/api/admin", "/api/surveys")):
+    if request.url.path.startswith(("/api/quiz", "/api/admin", "/api/surveys", "/api/comments")):
         response.headers["Cache-Control"] = "no-store"
     elif response.status_code == 200 and re.fullmatch(r"/assets/[^/]+-[A-Za-z0-9_-]{8,}\.(?:js|css)", request.url.path):
         response.headers["Cache-Control"] = "public, max-age=31536000, immutable"

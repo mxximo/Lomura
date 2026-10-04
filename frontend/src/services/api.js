@@ -41,6 +41,8 @@ export const completeQuiz = (answers, submission_id, language) =>
   });
 export const sendSurvey = (payload) =>
   request("/surveys", { method: "POST", body: JSON.stringify(payload) });
+export const loadComments = (page = 1) => request(`/comments?page=${page}`);
+export const sendComment = (payload) => request('/comments', { method: 'POST', body: JSON.stringify(payload) });
 export const adminRequest = (path, options = {}) =>
   request(`/admin${path}`, { ...options, credentials: "include" });
 export async function exportResponses(

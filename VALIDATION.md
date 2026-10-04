@@ -85,3 +85,10 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Portada con el lema elegido, firma de marca y datos de acceso; paleta ajustada al sÃ­mbolo de Lumora. Ilustraciones visibles en los cinco mÃ³dulos, tarjetas de video con mejor separaciÃ³n y menÃº mÃ³vil con icono de cierre explÃ­cito.
 - CompilaciÃ³n Vite correcta. Diez pruebas de diseÃ±o adaptable cubren 16 rutas entre 320 y 1920 px, orientaciÃ³n horizontal y lectura ampliada. Siete comprobaciones adicionales cubren accesibilidad, recorrido con teclado, preferencias y ambos temas; otras dos en mÃ³vil emulado cubren menÃº y accesibilidad de seis rutas en ambos temas.
 - Las auditorÃ­as automÃ¡ticas axe no detectaron infracciones en el alcance comprobado. Capturas en `artifacts/lumora-refresh-{light,dark}-{390,1440}.png`. No se usÃ³ hardware fÃ­sico.
+
+## Navegación editorial y comentarios
+
+- Cabecera continua con firma tipográfica, enlaces subrayados y menú móvil numerado. Los números decorativos no alteran los nombres accesibles; el enlace activo distingue los destinos de la portada.
+- Comentarios bilingües persistentes con consentimiento, aprobación administrativa, paginación, protección de origen, límite por hora y reintentos por UUID. El panel permite publicar, retirar y descargar CSV protegido contra fórmulas.
+- 24 pruebas Playwright aprobadas en escritorio y móvil emulado: rutas entre 320 y 1920 px, navegación ampliada, envío, moderación, exportación y retirada. Axe sin infracciones detectadas en formulario y menú a 320 px, en ambos temas.
+- Backend: 34 pruebas locales aprobadas; 16 comprobaciones PostgreSQL requieren la base de integración de CI y se omiten localmente. Compilación Vite correcta. Capturas revisadas en `artifacts/editorial-{320,1440}.png`, `artifacts/editorial-menu-320.png` y `artifacts/comments-{320,1440}.png`.

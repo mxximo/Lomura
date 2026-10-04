@@ -48,6 +48,8 @@ def postgres_connection(url):
                     "CREATE INDEX IF NOT EXISTS responses_date ON responses(created_at)",
                     "CREATE TABLE IF NOT EXISTS sessions (digest TEXT PRIMARY KEY, expires DOUBLE PRECISION NOT NULL, credential TEXT NOT NULL)",
                     "CREATE TABLE IF NOT EXISTS login_limits (address TEXT PRIMARY KEY, attempts INTEGER NOT NULL, reset DOUBLE PRECISION NOT NULL)",
+                    "CREATE TABLE IF NOT EXISTS comments (id TEXT PRIMARY KEY, created_at TEXT NOT NULL, alias TEXT NOT NULL, body TEXT NOT NULL, language TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending')",
+                    "CREATE TABLE IF NOT EXISTS comment_limits (address TEXT PRIMARY KEY, attempts INTEGER NOT NULL, reset DOUBLE PRECISION NOT NULL)",
                 ):
                     connection.execute(statement)
                 connection.commit()
@@ -97,6 +99,11 @@ def database():
             CREATE TABLE IF NOT EXISTS sessions (
                 digest TEXT PRIMARY KEY, expires REAL NOT NULL, credential TEXT NOT NULL);
             CREATE TABLE IF NOT EXISTS login_limits (
+                address TEXT PRIMARY KEY, attempts INTEGER NOT NULL, reset REAL NOT NULL);
+            CREATE TABLE IF NOT EXISTS comments (
+                id TEXT PRIMARY KEY, created_at TEXT NOT NULL, alias TEXT NOT NULL,
+                body TEXT NOT NULL, language TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending');
+            CREATE TABLE IF NOT EXISTS comment_limits (
                 address TEXT PRIMARY KEY, attempts INTEGER NOT NULL, reset REAL NOT NULL);
         """)
         if "questionnaire_version" not in {r[1] for r in connection.execute("PRAGMA table_info(responses)")}:

@@ -9,6 +9,7 @@ import TopicSpotlight from "../components/TopicSpotlight";
 import GuidedTour from "../components/GuidedTour";
 import useCountUp from "../hooks/useCountUp";
 import Icon from "../components/Icon";
+import Comments from "../components/Comments";
 import { completion } from "../i18n/completion";
 import { refinement } from "../i18n/refinement";
 export default function Home() {
@@ -424,6 +425,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Comments />
       {hasStarted && (
         <section className="journey-settings">
           <p className="small muted">

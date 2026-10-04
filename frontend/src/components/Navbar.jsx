@@ -1,12 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
 import LanguageToggle from "./LanguageToggle";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
 import { completion } from "../i18n/completion";
+import { comments } from "../i18n/comments";
 export default function Navbar() {
   const { t, lang } = useLanguage();
+  const { pathname, hash } = useLocation();
   const [open, setOpen] = useState(false);
   const menuButton = useRef(null);
   const header = useRef(null);
@@ -33,7 +35,7 @@ export default function Navbar() {
       <a className="skip-link" href="#main">
         {t.skip}
       </a>
-      <header className="navbar glass" ref={header}>
+      <header className="navbar editorial-nav" ref={header}>
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
           <img src="/media/lumora.svg" width="34" height="34" alt="" />
           {t.brand}
@@ -44,22 +46,32 @@ export default function Navbar() {
           className={open ? "nav-links open" : "nav-links"}
           aria-label={t.menu}
         >
-          <NavLink to="/" end onClick={() => setOpen(false)}>
+          <NavLink to="/" end className={() => pathname === "/" && !hash ? "active" : ""} aria-current={pathname === "/" && !hash ? "page" : false} onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">01</span>
             {t.home}
           </NavLink>
-          <NavLink to="/#modules" onClick={() => setOpen(false)}>
+          <NavLink to="/#modules" className={() => pathname === "/" && hash === "#modules" ? "active" : ""} aria-current={pathname === "/" && hash === "#modules" ? "page" : false} onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">02</span>
             {t.modules}
           </NavLink>
           <NavLink to="/quiz" onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">03</span>
             {t.quiz}
           </NavLink>
           <NavLink to="/videos" onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">04</span>
             {completion[lang].videos}
           </NavLink>
           <NavLink to="/survey" onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">05</span>
             {completion[lang].survey}
           </NavLink>
+          <NavLink to="/#comments" className={() => pathname === "/" && hash === "#comments" ? "active" : ""} aria-current={pathname === "/" && hash === "#comments" ? "page" : false} onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">06</span>
+            {comments[lang].voices}
+          </NavLink>
           <NavLink to="/credits" onClick={() => setOpen(false)}>
+            <span className="nav-step" aria-hidden="true">07</span>
             {t.credits}
           </NavLink>
         </nav>
