@@ -53,6 +53,14 @@ La versión compilada se sirve en http://127.0.0.1:8000 mediante FastAPI, con fr
 
 Comandos, configuración y operación en README.md.
 
+## PostgreSQL para Render
+
+- Soporte PostgreSQL mediante DATABASE_URL, conexión remota cifrada y tablas en el esquema lumora. SQLite permanece para desarrollo local.
+- Render rechaza envíos y health checks si no hay DATABASE_URL. Una conexión fallida devuelve 503 sin almacenar en SQLite ni revelar credenciales.
+- GitHub Actions ejecutó la compilación del frontend y 43 pruebas aprobadas con SQLite y PostgreSQL 17 real; una prueba de migración de archivo SQLite se omite para PostgreSQL. Resultado: https://github.com/mxximo/Lomura/actions/runs/37173257738.
+- Verificados envío de encuesta, quiz completo, reintentos sin duplicación, conflictos de UUID, sesiones, límites de acceso, filtros, paginación, métricas y CSV sobre ambos motores.
+- La cuenta Supabase del usuario y su conexión desde Render todavía no están configuradas. La imagen Docker no se construyó en esta comprobación. Pasos de conexión y comprobación de persistencia tras reinicio en DEPLOY-RENDER.md.
+
 ## Revisión móvil y créditos
 
 Actualización del 3 de octubre de 2026:
