@@ -70,10 +70,6 @@ export default function Navbar() {
             <span className="nav-step" aria-hidden="true">06</span>
             {comments[lang].voices}
           </NavLink>
-          <NavLink to="/credits" onClick={() => setOpen(false)}>
-            <span className="nav-step" aria-hidden="true">07</span>
-            {t.credits}
-          </NavLink>
         </nav>
         <div className="nav-actions">
           <ThemeToggle />

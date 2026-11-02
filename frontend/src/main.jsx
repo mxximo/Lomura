@@ -20,6 +20,7 @@ import "./styles/refinement.css";
 import "./styles/lumora.css";
 import "./styles/editorial.css";
 import "./styles/home-simple.css";
+import "./styles/interaction-motion.css";
 function Fatal() {
   const { t } = useLanguage();
   return (

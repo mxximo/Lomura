@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
-import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { Routes, Route, useLocation, Link, Navigate } from "react-router-dom";
 import { useLanguage } from "./context/LanguageContext";
 import { useContent, ResourceBoundary } from "./context/ContentContext";
 import { PracticeDock } from "./components/PracticeTimer";
@@ -12,7 +12,6 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 const Lesson = lazy(() => import("./pages/Lesson"));
 const FinalQuiz = lazy(() => import("./pages/FinalQuiz"));
-const Credits = lazy(() => import("./pages/Credits"));
 const Videos = lazy(() => import("./pages/Videos"));
 const Survey = lazy(() => import("./pages/Survey"));
 const Admin = lazy(() => import("./pages/Admin"));
@@ -42,7 +41,7 @@ function RouteEffects({ pathname }) {
       "/survey": completion[lang].survey,
       "/admin": completion[lang].admin,
     };
-    document.title = `${lesson ? tr(lesson.intro) : extra[pathname] || (pathname === "/quiz" ? t.quiz : pathname === "/credits" ? t.credits : t.home)} · ${t.brand}`;
+    document.title = `${lesson ? tr(lesson.intro) : extra[pathname] || (pathname === "/quiz" ? t.quiz : t.home)} · ${t.brand}`;
   }, [pathname, t, tr, lang, modules]);
   return null;
 }
@@ -115,14 +114,7 @@ export default function App() {
                   </ResourceBoundary>
                 }
               />
-              <Route
-                path="/credits"
-                element={
-                  <ResourceBoundary resource="credits">
-                    <Credits />
-                  </ResourceBoundary>
-                }
-              />
+              <Route path="/credits" element={<Navigate to="/" replace />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
@@ -140,7 +132,6 @@ export default function App() {
         </div>
         <div>
           <p>{t.footerNote}</p>
-          <Link to="/credits">{t.credits} ↗</Link>
           <Link to="/survey">{completion[lang].survey} ↗</Link>
           <Link to="/admin">{completion[lang].admin} ↗</Link>
         </div>

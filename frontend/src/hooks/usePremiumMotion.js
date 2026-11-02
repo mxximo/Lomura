@@ -15,6 +15,9 @@ export default function usePremiumMotion(routeKey) {
 
     // 1. Scroll reveal — every meaningful block gets a staggered entrance.
     const selectors = [
+      "#main .simple-hero-copy > *",
+      "#main .simple-photo",
+      "#main .simple-topic",
       "#main .hero-copy > *",
       "#main .hero-art",
       "#main .page-heading > *",

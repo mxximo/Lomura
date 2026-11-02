@@ -63,10 +63,11 @@ test("landscape menu and enlarged reading remain usable", async ({ page }) => {
   await page.getByRole("button", { name: "Menú", exact: true }).click();
   const credits = page
     .locator("#primary-nav")
-    .getByRole("link", { name: "Créditos", exact: true });
+    .getByRole("link", { name: "Tu opinión", exact: true });
   await credits.scrollIntoViewIfNeeded();
   await credits.click();
-  await expect(page).toHaveURL(/credits/);
+  await expect(page).toHaveURL(/#comments$/);
+  await expect(page.locator("#comment-body")).toBeVisible();
   await page.setViewportSize({ width: 320, height: 700 });
   await page.goto("/learn/pomodoro");
   const increase = page.getByRole("button", { name: "Aumentar letra" });

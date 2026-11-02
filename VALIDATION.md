@@ -107,3 +107,10 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Se completó la integración de nueve fotografías con ubicación colombiana documentada, pendiente de la revisión anterior, y sus créditos. Una imagen técnica de inicio de sesión se conserva por su correspondencia con la lección.
 - Compilación Vite correcta; 34 pruebas locales del backend aprobadas (16 de PostgreSQL omitidas localmente). Tres matrices de 16 rutas aprobadas a 320, 390 y 1440 px. Cuatro flujos de comentarios aprobados en escritorio y móvil; borrador, navegación de comunidad, carga diferida, quiz oscuro y retorno a la última lección comprobados.
 - Axe sin infracciones en inicio a 390/1440 px, en ambos temas. Capturas: `artifacts/home-simple-{light,dark}-{390,1440}.png`. Las comprobaciones usan Chromium emulado y datos aislados.
+
+## Navegación y movimiento — 2 de noviembre de 2026
+
+- Retirado el módulo público de Créditos y sus enlaces; URL antigua redirige al inicio. Fuentes y atribuciones conservadas en su contexto. «Voces» cambia a «Tu opinión» en menú, inicio y formulario, con traducción al inglés. «Encuesta» se mantiene para el formulario de evaluación.
+- Transiciones de página de 140/220 ms con cabecera independiente; apertura de menú y opinión de 180/220 ms, y entradas breves en las tarjetas del inicio. Estados hover solo en puntero preciso.
+- Compilación Vite correcta y 18 pruebas Playwright aprobadas: matrices de rutas de 320 a 1920 px, orientación horizontal, teclado, etiquetas bilingües, redirección, cambios rápidos de ruta y accesibilidad de menú/formulario en ambos temas.
+- Movimiento reducido comprobado: menú y panel muestran animation-name: none. Capturas en `artifacts/opinion-menu-{no-preference,reduce}.png` y `artifacts/opinion-panel-{no-preference,reduce}.png`.

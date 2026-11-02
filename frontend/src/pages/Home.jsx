@@ -25,12 +25,12 @@ export default function Home({ hash = "" }) {
     intro: "Aprende a cuidar tu vista, tu postura y tu tiempo frente a las pantallas. Lecciones breves con ejercicios para tu día a día.",
     explore: "Ver los temas", title: "¿Por dónde quieres empezar?", hint: "Elige un tema. Puedes seguir el orden o ir directamente a lo que necesitas.",
     lessons: "2 lecciones", progress: "Tu avance", resources: "Para seguir aprendiendo", quiz: "Pon a prueba lo aprendido", videos: "Mira las explicaciones en video", survey: "Cuéntanos cómo fue tu experiencia",
-    voices: "Voces de Lumora", voicesHint: "Lee los comentarios o comparte tu experiencia.", settings: "Mi progreso en este navegador",
+    voices: "Tu opinión", voicesHint: "Lee los comentarios o comparte tu experiencia.", settings: "Mi progreso en este navegador",
   } : {
     intro: "Learn to look after your eyes, posture and time in front of screens. Short lessons with exercises for everyday life.",
     explore: "Explore the topics", title: "Where would you like to start?", hint: "Choose a topic. Follow the order or go straight to what you need.",
     lessons: "2 lessons", progress: "Your progress", resources: "Keep learning", quiz: "Put what you learned into practice", videos: "Watch the video explanations", survey: "Tell us about your experience",
-    voices: "Voices of Lumora", voicesHint: "Read the comments or share your experience.", settings: "My progress in this browser",
+    voices: "Your feedback", voicesHint: "Read the comments or share your experience.", settings: "My progress in this browser",
   };
   return <div className="home-simple">
     <section className="simple-hero" aria-labelledby="home-title">

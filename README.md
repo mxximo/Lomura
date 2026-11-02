@@ -131,4 +131,6 @@ La marca pública es Lumora: «Encuentra tu equilibrio digital». Su símbolo ve
 
 Los comentarios de la portada (`/#comments`) se guardan en la misma base de datos y quedan pendientes hasta su aprobación. En `/admin`, la sección «Comentarios de la comunidad» permite publicar, retirar y exportar todos los comentarios a CSV. El formulario solicita consentimiento y admite alias opcional, con límite de cinco mensajes por hora y protección contra reintentos duplicados. No se publican mensajes de ejemplo.
 
-El inicio concentra la navegación en cinco temas y una acción principal. Los comentarios se abren bajo demanda desde «Voces de Lumora» o `/#comments`. Las fotografías con sufijo `-co` incluyen ubicación colombiana verificada en su fuente; la portada usa la imagen de Samuel Figueroa en Barranquilla.
+El inicio concentra la navegación en cinco temas y una acción principal. Los comentarios se abren bajo demanda desde «Tu opinión» o `/#comments`. Las fotografías con sufijo `-co` incluyen ubicación colombiana verificada en su fuente; la portada usa la imagen de Samuel Figueroa en Barranquilla.
+
+Créditos deja de ser una página navegable; `/credits` redirige al inicio. Se conservan las fuentes educativas y las atribuciones junto a los recursos. Las transiciones breves mantienen estable la cabecera y respetan movimiento reducido.

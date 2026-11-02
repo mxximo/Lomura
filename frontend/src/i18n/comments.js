@@ -1,6 +1,6 @@
 export const comments = {
   es: {
-    eyebrow: 'VOCES DE LUMORA', title: 'Lo que cambia cuando hacemos una pausa.',
+    eyebrow: 'TU OPINIÓN', title: 'Tu opinión nos ayuda a mejorar.',
     intro: 'Comparte una idea, una pequeña victoria o algo que quieras mejorar. Tu experiencia puede acompañar a alguien más.',
     empty: 'Este espacio empieza contigo.', emptyText: 'Todavía no hay comentarios publicados. Puedes dejar el primero para revisión.',
     write: 'Deja unas palabras', alias: 'Alias (opcional)', body: 'Tu comentario',
@@ -15,10 +15,10 @@ export const comments = {
     moderation: 'Comentarios de la comunidad', moderationIntro: 'Revisa los mensajes antes de publicarlos. También puedes retirar un comentario aprobado.',
     status: 'Estado de comentarios', pending: 'Pendientes', approved: 'Publicados', rejected: 'No publicados', all: 'Todos',
     approve: 'Publicar', reject: 'No publicar', csv: 'Exportar comentarios CSV',
-    none: 'No hay comentarios en este estado.', voices: 'Voces',
+    none: 'No hay comentarios en este estado.', voices: 'Tu opinión',
   },
   en: {
-    eyebrow: 'VOICES OF LUMORA', title: 'What changes when we take a pause.',
+    eyebrow: 'YOUR FEEDBACK', title: 'Your feedback helps us improve.',
     intro: 'Share an idea, a small win or something you want to improve. Your experience might help someone else.',
     empty: 'This space starts with you.', emptyText: 'No comments have been published yet. You can submit the first one for review.',
     write: 'Leave a few words', alias: 'Alias (optional)', body: 'Your comment',
@@ -33,6 +33,6 @@ export const comments = {
     moderation: 'Community comments', moderationIntro: 'Review messages before publishing. You can also unpublish an approved comment.',
     status: 'Comment status', pending: 'Pending', approved: 'Published', rejected: 'Unpublished', all: 'All',
     approve: 'Publish', reject: 'Unpublish', csv: 'Export comments CSV',
-    none: 'No comments with this status.', voices: 'Voices',
+    none: 'No comments with this status.', voices: 'Your feedback',
   },
 };

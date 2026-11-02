@@ -170,7 +170,7 @@ test("overdue suspended session waits at the next phase", async ({ page }) => {
   await expect(page.getByRole("timer")).toHaveText("20:00");
 });
 
-test("credits and quiz outages are isolated and recover independently", async ({
+test("quiz outages leave the home and lessons available", async ({
   page,
 }) => {
   const calls = [];
@@ -185,16 +185,11 @@ test("credits and quiz outages are isolated and recover independently", async ({
   );
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Más equilibrio",
+    "Encuentra tu",
   );
   expect(
     calls.some((url) => url.endsWith("/credits") || url.endsWith("/quiz")),
   ).toBe(false);
-  await page.goto("/credits");
-  await expect(page.getByRole("alert")).toBeVisible();
-  await page.unroute("**/api/credits");
-  await page.getByRole("button", { name: "Reintentar" }).click();
-  await expect(page.locator(".credit-item")).not.toHaveCount(0);
   await page.goto("/quiz");
   await expect(page.getByRole("alert")).toBeVisible();
   await page.goto("/learn/regla-20-20-20");

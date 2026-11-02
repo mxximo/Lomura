@@ -24,42 +24,18 @@ async function withinViewport(page) {
   expect(overflow).toEqual([]);
 }
 
-test("compact credits retain all resources and work on a small phone in both languages", async ({
-  page,
-}, info) => {
+test("mobile navigation shows the survey and opinion in both languages", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 });
-  await page.goto("/credits");
-  await expect(page.locator(".credit-folder")).toHaveCount(4);
-  await expect(page.locator(".credit-folder[open]")).toHaveCount(0);
-  expect(
-    await page
-      .locator(".credits-page")
-      .evaluate((el) => el.getBoundingClientRect().height),
-  ).toBeLessThan(1300);
-  await page.screenshot({
-    path: `../artifacts/mobile-credits-compact-${info.project.name}.png`,
-    fullPage: true,
-  });
-  for (const folder of await page.locator(".credit-folder > summary").all()) {
-    await folder.click();
-    await expect(page.locator(".credit-folder[open]")).toHaveCount(1);
-    const first = page.locator(".credit-folder[open] .credit-item").first();
-    await first.locator("summary").click();
-    await expect(first.locator(".citation-text")).toBeVisible();
-    await withinViewport(page);
-  }
+  await page.goto("/");
+  await page.getByRole("button", { name: "Menú", exact: true }).click();
+  await expect(page.locator('#primary-nav a[href="/credits"]')).toHaveCount(0);
+  await expect(page.locator('#primary-nav a[href="/survey"]')).toHaveText(/Encuesta/);
+  await page.locator('#primary-nav a[href="/#comments"]').click();
+  await expect(page.locator('#comment-body')).toBeVisible();
   await page.getByRole("button", { name: "English", exact: true }).click();
-  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.getByRole("button", { name: "Menu", exact: true }).click();
+  await expect(page.locator('#primary-nav a[href="/#comments"]')).toHaveText(/Your feedback/);
   await withinViewport(page);
-  await page.locator(".theme-toggle").click();
-  await page.waitForTimeout(350);
-  expect(
-    (
-      await new AxeBuilder({ page })
-        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-        .analyze()
-    ).violations,
-  ).toEqual([]);
 });
 
 test("survey, video player and authenticated admin fit a 320 pixel phone", async ({

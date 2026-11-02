@@ -1,0 +1,42 @@
+/* Brief, predictable motion: content stays readable and the header stays still. */
+.navbar.editorial-nav { view-transition-name: lumora-header; }
+.simple-topic, .simple-resources a, .simple-disclosure {
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.simple-topic > svg { transition: transform 180ms ease; }
+.simple-resources a > span:last-child { transition: transform 180ms ease; }
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) { animation: lumora-route-out 140ms ease-out both; }
+  ::view-transition-new(root) { animation: lumora-route-in 220ms ease-out both; }
+  ::view-transition-group(lumora-header),
+  ::view-transition-old(lumora-header),
+  ::view-transition-new(lumora-header) { animation: none; }
+  .home-simple [data-reveal] { transform: translateY(8px); }
+  .home-simple [data-reveal][data-revealed="true"] {
+    transform: none; transition: transform 320ms cubic-bezier(.22, 1, .36, 1);
+    transition-delay: calc(var(--reveal-order, 0) * 25ms);
+  }
+  .editorial-nav .nav-links.open { animation: lumora-panel-in 180ms ease-out both; }
+  .simple-community[open] .community-section { animation: lumora-panel-in 220ms ease-out both; }
+  .comment-received, .survey-success { animation: lumora-panel-in 240ms ease-out both; }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .simple-topic:hover > svg { transform: translateX(3px); }
+  .simple-resources a:hover > span:last-child { transform: translate(2px, -2px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .simple-topic, .simple-topic > svg, .simple-resources a,
+  .simple-resources a > span:last-child, .simple-disclosure { transition: none; }
+  .home-simple [data-reveal], .home-simple [data-revealed="true"] { transform: none; transition: none; }
+  .editorial-nav .nav-links.open, .simple-community .community-section,
+  .comment-received, .survey-success { animation: none; }
+  ::view-transition-group(lumora-header),
+  ::view-transition-old(lumora-header),
+  ::view-transition-new(lumora-header) { animation: none; }
+}
+@keyframes lumora-route-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes lumora-route-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lumora-panel-in {
+  from { opacity: .6; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

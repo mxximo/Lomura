@@ -252,24 +252,13 @@ test("correct quiz answer advances automatically only when explicitly enabled", 
   await expect(page.locator(".confetti-overlay")).toHaveCount(0);
 });
 
-test("credits expand and expose bilingual APA references", async ({
-  page,
-  context,
-}) => {
-  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+test("retired credits links return home and navigation uses the opinion label", async ({ page }) => {
   await page.goto("/credits");
-  await page.locator(".credit-folder > summary").first().click();
-  await page.locator(".credit-item summary").first().click();
-  await expect(page.locator(".citation-text").first()).toContainText(
-    "American Academy",
-  );
-  await page.getByRole("button", { name: "Copiar cita", exact: true }).click();
-  await expect(
-    page.getByRole("button", { name: "Cita copiada" }),
-  ).toBeVisible();
-  expect(await page.evaluate(() => navigator.clipboard.readText())).toContain(
-    "American Academy",
-  );
+  await expect(page).toHaveURL(/\/$/);
+  await expect(page.locator('a[href="/credits"]')).toHaveCount(0);
+  await expect(page.locator('#primary-nav a[href="/#comments"]')).toHaveText(/Tu opinión/);
+  await page.getByRole("button", { name: "English", exact: true }).click();
+  await expect(page.locator('#primary-nav a[href="/#comments"]')).toHaveText(/Your feedback/);
 });
 
 test("content error recovery and quiz server error allow retry", async ({

@@ -44,7 +44,7 @@ test('editorial menu and comment form remain accessible in both themes on a smal
     await page.getByRole('button', { name: 'Menú', exact: true }).click();
     await expect(page.locator('#primary-nav')).toBeVisible();
     expect((await new AxeBuilder({ page }).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze()).violations).toEqual([]);
-    await page.locator('#primary-nav').getByRole('link', { name: 'Voces', exact: true }).click();
+    await page.locator('#primary-nav').getByRole('link', { name: 'Tu opinión', exact: true }).click();
     await expect(page.getByRole('button', { name: 'Menú', exact: true })).toHaveAttribute('aria-expanded', 'false');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
