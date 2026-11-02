@@ -121,3 +121,9 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Diferenciados carga, vacío, error de consulta, error de envío y confirmación. Un envío fallido conserva texto y UUID para reintentar sin duplicarlo. Las sugerencias incompletas requieren completarse antes de enviarse. Confirmación recibe foco accesible.
 - Diez pruebas Playwright aprobadas: moderación/exportación/retirada, tres matrices de rutas (320/390/1440), menú/formulario en ambos temas, borrador y fallos simulados de lectura/envío con reintento. Los errores simulados no se enviaron a producción.
 - Axe sin infracciones en formulario y error de carga a 320/1440, en ambos temas. Compilación Vite correcta. Capturas revisadas en `artifacts/opinion-redesign-{light,dark}-{320,1440}.png`; el error de conexión de producción no se corrige con este cambio de interfaz.
+
+## Tu opinión sin ruido visual — 2 de noviembre de 2026
+
+- Una columna con encabezado breve, comentario, alias opcional, consentimiento y envío. Retirados guía lateral, sugerencias, encabezados secundarios, insignias, nota permanente de borrador y panel exterior. Opiniones publicadas plegadas bajo demanda.
+- Se conservan borrador, confirmación, validación y reintento sin duplicados. Seis pruebas de formulario, recuperación de errores y borradores aprobadas en escritorio/móvil, junto a cuatro auditorías axe sin infracciones a 320/1440 en ambos temas. Compilación Vite correcta.
+- Capturas revisadas en `artifacts/opinion-minimal-{light,dark}-{320,1440}.png`. El cambio es de interfaz y no modifica la conexión a Supabase.

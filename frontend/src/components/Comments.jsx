@@ -59,7 +59,6 @@ export default function Comments({ id = "comments" }) {
     event.preventDefault();
     if (lock.current) return;
     if (body.trim().length < 10) { setError('tooShort'); bodyInput.current?.focus(); return; }
-    if (t.prompts.some(prompt => prompt.text.trim() === body.trim())) { setError('completePrompt'); bodyInput.current?.focus(); return; }
     lock.current = true; setBusy(true); setError('');
     const values = { alias: alias.trim(), body: body.trim(), consent, language: lang };
     const fingerprint = JSON.stringify(values);
@@ -75,29 +74,22 @@ export default function Comments({ id = "comments" }) {
   return (
     <section id={id} className="community-section opinion-section" aria-labelledby="community-title">
       <header className="community-heading">
-        <span className="eyebrow">{t.eyebrow}</span>
         <h2 id="community-title">{t.title}</h2><p>{t.intro}</p>
       </header>
       <div className="community-layout opinion-layout">
         <div className="community-compose">
           {sent ? <div className="comment-received" role="status" tabIndex={-1} ref={receipt}>
-            <span className="opinion-success-icon"><Icon name="check" size={26} /></span>
             <h3>{t.sent}</h3><p>{t.sentText}</p>
             <button className="button secondary" onClick={() => { setSent(false); }}>{t.another}<Icon name="arrow" size={16} /></button>
           </div> : <form onSubmit={submit} aria-busy={busy}>
-            <div className="opinion-form-heading"><h3>{t.write}</h3><span><Icon name="privacy" size={15} />{t.reviewNote}</span></div>
             <label htmlFor="comment-body">{t.body}</label>
             <textarea id="comment-body" ref={bodyInput} required minLength={10} maxLength={600} rows={5}
               placeholder={t.placeholder} value={body} onChange={e => { setBody(e.target.value); if (error) setError(''); }} disabled={busy}
-              aria-invalid={['tooShort', 'completePrompt'].includes(error) ? true : undefined} aria-describedby={`comment-hint${error ? ' comment-error' : ''}`} />
+              aria-invalid={error === 'tooShort' ? true : undefined} aria-describedby={`comment-hint${error ? ' comment-error' : ''}`} />
             <div className="comment-help"><p id="comment-hint">{t.hint}</p><span aria-label={t.characters}>{body.length}/600</span></div>
-            {!body && <div className="opinion-prompts" aria-label={t.promptLabel}>
-              {t.prompts.map(prompt => <button type="button" key={prompt.label} disabled={busy} onClick={() => { setBody(prompt.text); bodyInput.current?.focus(); }}>{prompt.label}<span aria-hidden="true"> ↗</span></button>)}
-            </div>}
             <div className="opinion-alias">
               <label htmlFor="comment-alias">{t.alias}</label>
-              <input id="comment-alias" maxLength={40} placeholder={t.aliasPlaceholder} value={alias} onChange={e => setAlias(e.target.value)} disabled={busy} autoComplete="off" aria-describedby="alias-hint" />
-              <p id="alias-hint">{t.aliasHint}</p>
+              <input id="comment-alias" maxLength={40} placeholder={t.aliasPlaceholder} value={alias} onChange={e => setAlias(e.target.value)} disabled={busy} autoComplete="off" />
             </div>
             <label className="comment-consent"><input type="checkbox" required checked={consent} onChange={e => setConsent(e.target.checked)} disabled={busy} /><span>{t.consent}</span></label>
             {error && <div id="comment-error" role="alert" className="opinion-send-error"><Icon name="bell" size={18} /><p>{t[error]}</p></div>}
@@ -105,32 +97,27 @@ export default function Comments({ id = "comments" }) {
               <button className="button primary" type="submit" disabled={busy}>{busy ? t.sending : t.send}<Icon name="arrow" size={17} /></button>
               {body && <button type="button" className="text-button opinion-discard" disabled={busy} onClick={() => { setAlias(''); setBody(''); setConsent(false); submission.current = null; setError(''); bodyInput.current?.focus(); }}>{t.discard}</button>}
             </div>
-            {body && <p className="comment-draft-note">{t.draft}</p>}
           </form>}
         </div>
-        <aside className="opinion-guide" aria-labelledby="opinion-guide-title">
-          <span className="opinion-guide-icon" aria-hidden="true"><Icon name="privacy" size={23} /></span>
-          <h3 id="opinion-guide-title">{t.guideTitle}</h3><p>{t.guideIntro}</p>
-          <ol>{t.steps.map(step => <li key={step.title}><strong>{step.title}</strong><span>{step.text}</span></li>)}</ol>
-          <p className="opinion-guide-footnote">{t.privacyNote}</p>
-        </aside>
       </div>
-      <div className="community-voices opinion-published" aria-busy={loading}>
-        <header className="opinion-published-heading"><h3>{t.publishedTitle}</h3>{!loading && !loadError && data?.total > 0 && <span>{data.total}</span>}</header>
+      <details className="community-voices opinion-published">
+        <summary><span>{t.publishedTitle}{!loading && !loadError && data?.total > 0 ? ` (${data.total})` : ""}</span><span className="opinion-public-toggle" aria-hidden="true">+</span></summary>
+        <div aria-busy={loading}>
         {loading ? <div className="opinion-notice" role="status"><span className="opinion-loading-dot" aria-hidden="true" /><p>{t.loading}</p></div>
-          : loadError ? <div className="opinion-notice opinion-load-error" role="status"><Icon name="bell" size={19} /><div><strong>{t.loadErrorTitle}</strong><p>{t.loadErrorHint}</p></div><button className="text-button" onClick={() => setRefresh(v => v + 1)}>{t.retry}<Icon name="arrow" size={15} /></button></div>
+          : loadError ? <div className="opinion-notice opinion-load-error" role="status"><div><strong>{t.loadErrorTitle}</strong><p>{t.loadErrorHint}</p></div><button className="text-button" onClick={() => setRefresh(v => v + 1)}>{t.retry}<Icon name="arrow" size={15} /></button></div>
           : data?.items.length ? <>
             <div className="opinion-posts">{data.items.map(comment => <figure className="community-comment" key={comment.id}>
               <blockquote><p>{comment.body}</p></blockquote>
-              <figcaption><span className="opinion-person"><span className="opinion-avatar" aria-hidden="true">{Array.from(comment.alias.trim())[0] || 'L'}</span><strong>{comment.alias}</strong></span><time dateTime={comment.created_at}>{new Date(comment.created_at).toLocaleDateString(lang === 'es' ? 'es-CO' : 'en-GB', { month: 'short', day: 'numeric', year: 'numeric' })}</time></figcaption>
+              <figcaption><span className="opinion-person"><strong>{comment.alias}</strong></span><time dateTime={comment.created_at}>{new Date(comment.created_at).toLocaleDateString(lang === 'es' ? 'es-CO' : 'en-GB', { month: 'short', day: 'numeric', year: 'numeric' })}</time></figcaption>
             </figure>)}</div>
             {data.total > 6 && <div className="community-pagination">
               <button className="text-button" disabled={page === 1} onClick={() => setPage(p => p - 1)}>{t.prev}</button>
               <span>{page} / {Math.max(1, Math.ceil(data.total / 6))}</span>
               <button className="text-button" disabled={page * 6 >= data.total} onClick={() => setPage(p => p + 1)}>{t.next}</button>
             </div>}
-          </> : <div className="opinion-notice opinion-empty"><Icon name="leaf" size={22} /><div><strong>{t.empty}</strong><p>{t.emptyText}</p></div></div>}
-      </div>
+          </> : <div className="opinion-notice opinion-empty"><div><strong>{t.empty}</strong><p>{t.emptyText}</p></div></div>}
+        </div>
+      </details>
     </section>
   );
 }
