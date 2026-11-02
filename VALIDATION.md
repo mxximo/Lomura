@@ -114,3 +114,10 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Transiciones de página de 140/220 ms con cabecera independiente; apertura de menú y opinión de 180/220 ms, y entradas breves en las tarjetas del inicio. Estados hover solo en puntero preciso.
 - Compilación Vite correcta y 18 pruebas Playwright aprobadas: matrices de rutas de 320 a 1920 px, orientación horizontal, teclado, etiquetas bilingües, redirección, cambios rápidos de ruta y accesibilidad de menú/formulario en ambos temas.
 - Movimiento reducido comprobado: menú y panel muestran animation-name: none. Capturas en `artifacts/opinion-menu-{no-preference,reduce}.png` y `artifacts/opinion-panel-{no-preference,reduce}.png`.
+
+## Rediseño de Tu opinión — 2 de noviembre de 2026
+
+- Formulario en la columna principal, comentario antes del alias, tres ideas opcionales para empezar, explicación del alias y del proceso de revisión. Opiniones publicadas debajo del formulario. La guía lateral se omite en móvil pequeño para reducir longitud.
+- Diferenciados carga, vacío, error de consulta, error de envío y confirmación. Un envío fallido conserva texto y UUID para reintentar sin duplicarlo. Las sugerencias incompletas requieren completarse antes de enviarse. Confirmación recibe foco accesible.
+- Diez pruebas Playwright aprobadas: moderación/exportación/retirada, tres matrices de rutas (320/390/1440), menú/formulario en ambos temas, borrador y fallos simulados de lectura/envío con reintento. Los errores simulados no se enviaron a producción.
+- Axe sin infracciones en formulario y error de carga a 320/1440, en ambos temas. Compilación Vite correcta. Capturas revisadas en `artifacts/opinion-redesign-{light,dark}-{320,1440}.png`; el error de conexión de producción no se corrige con este cambio de interfaz.

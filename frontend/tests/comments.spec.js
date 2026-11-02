@@ -61,3 +61,35 @@ test('comment drafts survive navigation and reload without restoring publication
   await page.reload();
   await expect(page.getByLabel('Tu comentario', {exact:true})).toHaveValue('');
 });
+
+test('feedback failure states are specific and a failed submission keeps its retry identifier', async ({ page }) => {
+  let lookups = 0;
+  const submitted = [];
+  await page.route('**/api/comments**', async route => {
+    if (route.request().method() === 'GET') {
+      lookups++;
+      return route.fulfill({status:lookups === 1 ? 503 : 200,contentType:'application/json',body:JSON.stringify(lookups === 1 ? {detail:'unavailable'} : {items:[],total:0,page:1})});
+    }
+    submitted.push(route.request().postDataJSON());
+    return route.fulfill({status:submitted.length === 1 ? 503 : 201,contentType:'application/json',body:JSON.stringify(submitted.length === 1 ? {detail:'unavailable'} : {received:true})});
+  });
+  await page.goto('/#comments');
+  await expect(page.locator('.opinion-load-error')).toContainText('No pudimos cargar las opiniones');
+  await page.getByRole('button',{name:'Volver a intentar'}).click();
+  await expect(page.locator('.opinion-empty')).toBeVisible();
+  await page.getByRole('button',{name:'Una idea para mejorar'}).click();
+  await expect(page.locator('#comment-body')).toBeFocused();
+  await page.locator('.comment-consent input').check();
+  await page.getByRole('button',{name:'Enviar para revisión'}).click();
+  await expect(page.getByRole('alert')).toContainText('Completa la idea');
+  expect(submitted).toHaveLength(0);
+  const message = 'Me gustaría que Lumora explicara más ejemplos para estudiar.';
+  await page.locator('#comment-body').fill(message);
+  await page.getByRole('button',{name:'Enviar para revisión'}).click();
+  await expect(page.getByRole('alert')).toContainText('Tu texto sigue aquí');
+  await expect(page.locator('#comment-body')).toHaveValue(message);
+  await page.getByRole('button',{name:'Enviar para revisión'}).click();
+  await expect(page.locator('.comment-received')).toBeFocused();
+  expect(submitted).toHaveLength(2);
+  expect(submitted[0].submission_id).toBe(submitted[1].submission_id);
+});

@@ -21,6 +21,7 @@ import "./styles/lumora.css";
 import "./styles/editorial.css";
 import "./styles/home-simple.css";
 import "./styles/interaction-motion.css";
+import "./styles/opinion.css";
 function Fatal() {
   const { t } = useLanguage();
   return (
