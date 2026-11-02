@@ -78,24 +78,22 @@ test("mobile quiz keeps explanations until the learner advances and loads the fi
   await expect(page.locator(".quiz-meta")).toContainText("Pregunta 2 / 10");
 });
 
-test("home uses responsive media, defers page bundles and balances supporting cards", async ({
+test("home uses responsive media and defers page bundles and community data", async ({
   page,
 }) => {
   const assets = [];
   page.on("request", (r) => assets.push(r.url()));
   await page.goto("/");
-  await expect(page.locator("#daily-intention")).toBeVisible();
-  await expect(
-    page.locator(".home-bottom > section, .home-bottom > div"),
-  ).toHaveCount(3);
+  await expect(page.locator(".simple-topic")).toHaveCount(5);
+  await expect(page.locator("#comment-body")).toHaveCount(0);
   expect(
     assets.some((url) =>
       /\/assets\/(Admin|Survey|Lesson|FinalQuiz)-/.test(url),
     ),
   ).toBe(false);
   expect(
-    await page.locator(".hero-illustration").evaluate((e) => e.currentSrc),
-  ).toMatch(/hero-(480|800|1254)\.webp$/);
+    await page.locator(".simple-photo > img").evaluate((e) => e.currentSrc),
+  ).toMatch(/notifications-co-(480|960)\.webp$/);
 });
 
 test("admin analysis and readable downloads work in both themes at 320 pixels", async ({

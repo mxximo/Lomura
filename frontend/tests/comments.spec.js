@@ -49,3 +49,15 @@ test('editorial menu and comment form remain accessible in both themes on a smal
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
 });
+
+test('comment drafts survive navigation and reload without restoring publication consent', async ({ page }) => {
+  await page.goto('/#comments');
+  await page.getByLabel('Tu comentario', {exact:true}).fill('Mi experiencia con las pausas de Lumora.');
+  await page.locator('.comment-consent input').check();
+  await page.reload();
+  await expect(page.getByLabel('Tu comentario', {exact:true})).toHaveValue('Mi experiencia con las pausas de Lumora.');
+  await expect(page.locator('.comment-consent input')).not.toBeChecked();
+  await page.getByRole('button', {name:'Descartar borrador'}).click();
+  await page.reload();
+  await expect(page.getByLabel('Tu comentario', {exact:true})).toHaveValue('');
+});

@@ -1,51 +1,59 @@
 [
   {
     "key": "eyes",
-    "id": 2437901,
-    "author": "Marcelo Chagas",
-    "url": "https://www.pexels.com/photo/close-up-portrait-photo-of-woman-sitting-by-window-looking-outside-2437901/",
+    "id": 11098734,
+    "author": "Santiago Boada",
+    "url": "https://www.pexels.com/photo/a-laptop-and-mobile-phone-on-the-table-near-the-window-with-a-city-view-11098734/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Mujer mirando hacia el exterior a través de una ventana.",
-      "en": "Woman looking outside through a window."
-    }
+      "es": "Portátil junto a una ventana con vista a los cerros de Bogotá.",
+      "en": "Laptop beside a window overlooking the hills of Bogotá."
+    },
+    "location": "Bogotá, Colombia",
+    "image": "/media/photos/eyes-co-960.webp"
   },
   {
     "key": "display",
-    "id": 4245010,
-    "author": "Levent Simsek",
-    "url": "https://www.pexels.com/photo/modern-workspace-with-computer-and-keyboard-4245010/",
+    "id": 1110357,
+    "author": "Nubia Navarro (nubikini)",
+    "url": "https://www.pexels.com/photo/woman-holding-white-tablet-computer-1110357/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Monitor, teclado y ratón en un escritorio de madera.",
-      "en": "Monitor, keyboard and mouse on a wooden desk."
-    }
+      "es": "Persona utilizando una tableta y un lápiz digital en Bogotá.",
+      "en": "Person using a tablet and digital pen in Bogotá."
+    },
+    "location": "Bogotá, Colombia",
+    "image": "/media/photos/display-co-960.webp"
   },
   {
     "key": "ergonomics",
-    "id": 10963243,
-    "author": "Philipp Pistis",
-    "url": "https://www.pexels.com/photo/silver-monitor-on-wooden-table-10963243/",
+    "id": 10682666,
+    "author": "Gustavo Galeano Maz",
+    "url": "https://www.pexels.com/photo/desk-with-laptop-10682666/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Espacio de trabajo con escritorio de madera, monitor y silla.",
-      "en": "Workspace with a wooden desk, monitor and chair."
-    }
+      "es": "Escritorio con portátil, silla y plantas en una vivienda de Bogotá.",
+      "en": "Desk with laptop, chair and plants in a Bogotá home."
+    },
+    "location": "Bogotá, Colombia",
+    "image": "/media/photos/ergonomics-co-960.webp"
   },
   {
     "key": "stretch",
-    "id": 8546629,
-    "author": "Kaboompics.com",
-    "url": "https://www.pexels.com/photo/a-woman-stretching-on-a-table-8546629/",
+    "id": 9172288,
+    "author": "Diego Olarte",
+    "url": "https://www.pexels.com/photo/a-woman-doing-stretching-in-the-tennis-court-9172288/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Mujer haciendo una pausa para estirar los brazos junto a su escritorio.",
-      "en": "Woman taking a break to stretch her arms by her desk."
-    }
+      "es": "Mujer estirando los brazos al aire libre en Arbeláez.",
+      "en": "Woman stretching her arms outdoors in Arbeláez."
+    },
+    "location": "Arbeláez, Cundinamarca, Colombia",
+    "image": "/media/photos/stretch-co-960.webp"
   },
   {
     "key": "password",
@@ -61,62 +69,72 @@
   },
   {
     "key": "phishing",
-    "id": 7821764,
-    "author": "RDNE Stock project",
-    "url": "https://www.pexels.com/photo/a-laptop-on-the-table-7821764/",
+    "id": 15986797,
+    "author": "Omar Ramírez Vallejo",
+    "url": "https://www.pexels.com/photo/laptop-on-desk-15986797/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Portátil con una conversación de correo electrónico abierta.",
-      "en": "Laptop with an email conversation open."
-    }
+      "es": "Portátil con una aplicación de mensajes abierta sobre una mesa en Medellín.",
+      "en": "Laptop with a messaging app open on a table in Medellín."
+    },
+    "location": "Medellín, Colombia",
+    "image": "/media/photos/phishing-co-960.webp"
   },
   {
     "key": "pomodoro",
-    "id": 7129013,
-    "author": "Michael Burrows",
-    "url": "https://www.pexels.com/photo/crop-focused-man-writing-in-copybook-and-using-laptop-7129013/",
+    "id": 4929994,
+    "author": "Nathalie Payares",
+    "url": "https://www.pexels.com/photo/time-on-a-laptop-screen-on-the-desk-4929994/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Persona tomando apuntes en un cuaderno junto a su portátil.",
-      "en": "Person taking notes in a notebook beside a laptop."
-    }
+      "es": "Espacio de estudio con reloj en pantalla, lámpara y cuadernos en Barranquilla.",
+      "en": "Study space with an on-screen clock, lamp and notebooks in Barranquilla."
+    },
+    "location": "Barranquilla, Colombia",
+    "image": "/media/photos/pomodoro-co-960.webp"
   },
   {
     "key": "blockers",
-    "id": 31373574,
-    "author": "seymasungr",
-    "url": "https://www.pexels.com/photo/open-notebook-and-laptop-on-white-desk-31373574/",
+    "id": 7752866,
+    "author": "Apunto Group Agencia de publicidad",
+    "url": "https://www.pexels.com/photo/colleagues-sitting-together-at-table-and-working-7752866/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Escritorio despejado con libro abierto, portátil y una taza de té.",
-      "en": "Clear desk with an open book, laptop and a cup of tea."
-    }
+      "es": "Dos personas trabajando juntas frente a un monitor en Antioquia.",
+      "en": "Two people working together at a monitor in Antioquia."
+    },
+    "location": "Antioquia, Colombia",
+    "image": "/media/photos/blockers-co-960.webp"
   },
   {
     "key": "notifications",
-    "id": 4979123,
-    "author": "Tranmautritam",
-    "url": "https://www.pexels.com/photo/selective-focus-of-a-person-holding-a-cellphone-4979123/",
+    "id": 2837382,
+    "author": "Samuel Figueroa",
+    "url": "https://www.pexels.com/photo/two-women-and-a-man-smiling-while-looking-at-a-phone-2837382/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Mano sosteniendo un teléfono con notificaciones en pantalla.",
-      "en": "Hand holding a phone with notifications on screen."
-    }
+      "es": "Tres amigos compartiendo un momento alrededor de un teléfono en Barranquilla.",
+      "en": "Three friends sharing a moment around a phone in Barranquilla."
+    },
+    "location": "Barranquilla, Colombia",
+    "image": "/media/photos/notifications-co-960.webp"
   },
   {
     "key": "sleep",
-    "id": 5331094,
-    "author": "Monstera Production",
-    "url": "https://www.pexels.com/photo/sleepy-woman-lying-on-bed-with-alarm-on-smartphone-5331094/",
+    "id": 10649527,
+    "author": "Gustavo Galeano Maz",
+    "url": "https://www.pexels.com/photo/photo-of-a-bedroom-10649527/",
     "license": "https://www.pexels.com/license/",
-    "downloaded": "2026-10-03",
+    "downloaded": "2026-10-05",
     "alt": {
-      "es": "Mujer descansando entre almohadas y sábanas blancas.",
-      "en": "Woman resting among pillows and white bed linen."
-    }
+      "es": "Dormitorio iluminado con cama y ventanas en un apartamento de Bogotá.",
+      "en": "Bright bedroom with a bed and windows in a Bogotá apartment."
+    },
+    "location": "Bogotá, Colombia",
+    "image": "/media/photos/sleep-co-960.webp"
   }
 ]

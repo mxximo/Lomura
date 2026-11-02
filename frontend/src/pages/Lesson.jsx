@@ -1,4 +1,5 @@
 import LessonImage from "../components/LessonImage";
+import PhotoCaption from "../components/PhotoCaption";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext";
@@ -171,11 +172,14 @@ export default function Lesson() {
             <div className="lesson-reading">
               <GlassCard className="lesson-text">
                 <ReadingScale />
+                <figure className="lesson-photo">
                 <LessonImage
                   className="lesson-art"
                   src={lesson.media.image}
                   alt={tr(lesson.media.alt)}
                 />
+                <PhotoCaption attribution={lesson.media.attribution} />
+                </figure>
                 {lesson.paragraphs.map((p, i) => (
                   <p key={i}>{tr(p)}</p>
                 ))}

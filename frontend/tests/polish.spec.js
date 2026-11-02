@@ -30,28 +30,18 @@ test("focus mode exits with Escape and restores its trigger; reading size persis
   ).toBeTruthy();
 });
 
-test("carousel has an explicit persistent pause and keyboard-selectable items", async ({
-  page,
-}) => {
-  const now = new Date("2026-09-30T12:00:00Z");
-  await page.clock.install({ time: now });
-  await page.clock.pauseAt(now);
+test("community opens on demand with the keyboard and follows the navigation anchor", async ({ page }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: "Pausar carrusel" }).click();
-  const quote = await page.locator(".fact-body blockquote").textContent();
-  await page
-    .getByRole("link", { name: "Lumora.", exact: true })
-    .first()
-    .focus();
-  await page.mouse.move(0, 0);
-  await page.clock.runFor(15000);
-  await expect(page.locator(".fact-body blockquote")).toHaveText(quote);
-  await page.locator(".fact-dots button").nth(1).focus();
+  await expect(page.locator("#comment-body")).toHaveCount(0);
+  const summary = page.locator("#comments > summary");
+  await summary.focus();
   await page.keyboard.press("Enter");
-  await expect(page.locator(".fact-dots button").nth(1)).toHaveAttribute(
-    "aria-pressed",
-    "true",
-  );
+  await expect(page.locator("#comment-body")).toBeVisible();
+  await summary.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#comment-body")).toHaveCount(0);
+  await page.goto("/#comments");
+  await expect(page.locator("#comment-body")).toBeVisible();
 });
 
 test("rapid navigation commits the final route without stale transitions", async ({

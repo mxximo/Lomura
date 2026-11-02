@@ -130,3 +130,5 @@ Las diez lecciones usan fotografías de Pexels alojadas en `frontend/public/medi
 La marca pública es Lumora: «Encuentra tu equilibrio digital». Su símbolo vectorial está en `frontend/public/media/lumora.svg`. Ejecuta `node scripts/build-brand-icons.cjs` desde la raíz para generar favicon SVG, ICO de 16/32/48 px e icono móvil de 180 px; requiere las dependencias de desarrollo del frontend y Chromium de Playwright.
 
 Los comentarios de la portada (`/#comments`) se guardan en la misma base de datos y quedan pendientes hasta su aprobación. En `/admin`, la sección «Comentarios de la comunidad» permite publicar, retirar y exportar todos los comentarios a CSV. El formulario solicita consentimiento y admite alias opcional, con límite de cinco mensajes por hora y protección contra reintentos duplicados. No se publican mensajes de ejemplo.
+
+El inicio concentra la navegación en cinco temas y una acción principal. Los comentarios se abren bajo demanda desde «Voces de Lumora» o `/#comments`. Las fotografías con sufijo `-co` incluyen ubicación colombiana verificada en su fuente; la portada usa la imagen de Samuel Figueroa en Barranquilla.

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-test("dark quiz feedback, saved results and topic focus stay readable", async ({
+test("dark quiz feedback, saved results and community stay readable", async ({
   page,
 }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
@@ -39,8 +39,8 @@ test("dark quiz feedback, saved results and topic focus stay readable", async ({
     ).violations,
   ).toEqual([]);
   await page.goto("/");
-  await page.locator(".topics-eye").click();
-  await expect(page.locator(".spot-overlay")).toBeVisible();
+  await page.locator("#comments > summary").click();
+  await expect(page.locator("#comment-body")).toBeVisible();
   expect(
     (
       await new AxeBuilder({ page })
@@ -48,8 +48,9 @@ test("dark quiz feedback, saved results and topic focus stay readable", async ({
         .analyze()
     ).violations,
   ).toEqual([]);
-  await page.keyboard.press("Escape");
-  await expect(page.locator(".topics-eye")).toBeFocused();
+  await page.locator("#comments > summary").focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#comment-body")).toHaveCount(0);
 });
 
 test("survey persists once and admin exports the submitted answers", async ({

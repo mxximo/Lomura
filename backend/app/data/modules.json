@@ -46,10 +46,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/eyes-960.webp",
+          "image": "/media/photos/eyes-co-960.webp",
           "alt": {
-            "es": "Mujer mirando hacia el exterior a través de una ventana.",
-            "en": "Woman looking outside through a window."
+            "es": "Portátil junto a una ventana con vista a los cerros de Bogotá.",
+            "en": "Laptop beside a window overlooking the hills of Bogotá."
           },
           "video": "https://www.youtube-nocookie.com/embed/iF9N4bMvIac",
           "video_title": {
@@ -57,7 +57,12 @@
             "en": "The 20-20-20 rule"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Santiago Boada",
+            "url": "https://www.pexels.com/photo/a-laptop-and-mobile-phone-on-the-table-near-the-window-with-a-city-view-11098734/",
+            "location": "Bogotá, Colombia"
+          }
         },
         "interaction": "eyes",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -97,10 +102,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/display-960.webp",
+          "image": "/media/photos/display-co-960.webp",
           "alt": {
-            "es": "Monitor, teclado y ratón en un escritorio de madera.",
-            "en": "Monitor, keyboard and mouse on a wooden desk."
+            "es": "Persona utilizando una tableta y un lápiz digital en Bogotá.",
+            "en": "Person using a tablet and digital pen in Bogotá."
           },
           "video": "https://www.youtube-nocookie.com/embed/6t60pHQbfdk",
           "video_title": {
@@ -108,7 +113,12 @@
             "en": "Device settings"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Nubia Navarro (nubikini)",
+            "url": "https://www.pexels.com/photo/woman-holding-white-tablet-computer-1110357/",
+            "location": "Bogotá, Colombia"
+          }
         },
         "interaction": "display",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -163,10 +173,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/ergonomics-960.webp",
+          "image": "/media/photos/ergonomics-co-960.webp",
           "alt": {
-            "es": "Espacio de trabajo con escritorio de madera, monitor y silla.",
-            "en": "Workspace with a wooden desk, monitor and chair."
+            "es": "Escritorio con portátil, silla y plantas en una vivienda de Bogotá.",
+            "en": "Desk with laptop, chair and plants in a Bogotá home."
           },
           "video": "https://www.youtube-nocookie.com/embed/sjtxhTkDrL0",
           "video_title": {
@@ -182,7 +192,12 @@
                 "en": "An ergonomic setup · Another perspective"
               }
             }
-          ]
+          ],
+          "attribution": {
+            "author": "Gustavo Galeano Maz",
+            "url": "https://www.pexels.com/photo/desk-with-laptop-10682666/",
+            "location": "Bogotá, Colombia"
+          }
         },
         "interaction": "ergonomics",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -245,10 +260,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/stretch-960.webp",
+          "image": "/media/photos/stretch-co-960.webp",
           "alt": {
-            "es": "Mujer haciendo una pausa para estirar los brazos junto a su escritorio.",
-            "en": "Woman taking a break to stretch her arms by her desk."
+            "es": "Mujer estirando los brazos al aire libre en Arbeláez.",
+            "en": "Woman stretching her arms outdoors in Arbeláez."
           },
           "video": "https://www.youtube-nocookie.com/embed/admer1XX8YM",
           "video_title": {
@@ -256,7 +271,12 @@
             "en": "A quick movement break"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Diego Olarte",
+            "url": "https://www.pexels.com/photo/a-woman-doing-stretching-in-the-tennis-court-9172288/",
+            "location": "Arbeláez, Cundinamarca, Colombia"
+          }
         },
         "interaction": "stretch",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -374,7 +394,12 @@
             "en": "Secure authentication"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Pixabay",
+            "url": "https://www.pexels.com/photo/tuned-on-gray-laptop-computer-163097/",
+            "location": null
+          }
         },
         "interaction": "password",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -424,10 +449,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/phishing-960.webp",
+          "image": "/media/photos/phishing-co-960.webp",
           "alt": {
-            "es": "Portátil con una conversación de correo electrónico abierta.",
-            "en": "Laptop with an email conversation open."
+            "es": "Portátil con una aplicación de mensajes abierta sobre una mesa en Medellín.",
+            "en": "Laptop with a messaging app open on a table in Medellín."
           },
           "video": "https://www.youtube-nocookie.com/embed/UuuAlP7ay6U",
           "video_title": {
@@ -435,7 +460,12 @@
             "en": "Recognising phishing"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Omar Ramírez Vallejo",
+            "url": "https://www.pexels.com/photo/laptop-on-desk-15986797/",
+            "location": "Medellín, Colombia"
+          }
         },
         "interaction": "phishing",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -541,14 +571,19 @@
           }
         ],
         "media": {
-          "image": "/media/photos/pomodoro-960.webp",
+          "image": "/media/photos/pomodoro-co-960.webp",
           "alt": {
-            "es": "Persona tomando apuntes en un cuaderno junto a su portátil.",
-            "en": "Person taking notes in a notebook beside a laptop."
+            "es": "Espacio de estudio con reloj en pantalla, lámpara y cuadernos en Barranquilla.",
+            "en": "Study space with an on-screen clock, lamp and notebooks in Barranquilla."
           },
           "video": null,
           "video_title": null,
-          "review": null
+          "review": null,
+          "attribution": {
+            "author": "Nathalie Payares",
+            "url": "https://www.pexels.com/photo/time-on-a-laptop-screen-on-the-desk-4929994/",
+            "location": "Barranquilla, Colombia"
+          }
         },
         "interaction": "pomodoro",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -600,10 +635,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/blockers-960.webp",
+          "image": "/media/photos/blockers-co-960.webp",
           "alt": {
-            "es": "Escritorio despejado con libro abierto, portátil y una taza de té.",
-            "en": "Clear desk with an open book, laptop and a cup of tea."
+            "es": "Dos personas trabajando juntas frente a un monitor en Antioquia.",
+            "en": "Two people working together at a monitor in Antioquia."
           },
           "video": "https://www.youtube-nocookie.com/embed/XoChDJgVRuw",
           "video_title": {
@@ -611,7 +646,12 @@
             "en": "Distraction blockers"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Apunto Group Agencia de publicidad",
+            "url": "https://www.pexels.com/photo/colleagues-sitting-together-at-table-and-working-7752866/",
+            "location": "Antioquia, Colombia"
+          }
         },
         "interaction": "blockers",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -715,10 +755,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/notifications-960.webp",
+          "image": "/media/photos/notifications-co-960.webp",
           "alt": {
-            "es": "Mano sosteniendo un teléfono con notificaciones en pantalla.",
-            "en": "Hand holding a phone with notifications on screen."
+            "es": "Tres amigos compartiendo un momento alrededor de un teléfono en Barranquilla.",
+            "en": "Three friends sharing a moment around a phone in Barranquilla."
           },
           "video": "https://www.youtube-nocookie.com/embed/TG9pqpRdtU8",
           "video_title": {
@@ -726,7 +766,12 @@
             "en": "Dopamine loops & notifications"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Samuel Figueroa",
+            "url": "https://www.pexels.com/photo/two-women-and-a-man-smiling-while-looking-at-a-phone-2837382/",
+            "location": "Barranquilla, Colombia"
+          }
         },
         "interaction": "notifications",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",
@@ -776,10 +821,10 @@
           }
         ],
         "media": {
-          "image": "/media/photos/sleep-960.webp",
+          "image": "/media/photos/sleep-co-960.webp",
           "alt": {
-            "es": "Mujer descansando entre almohadas y sábanas blancas.",
-            "en": "Woman resting among pillows and white bed linen."
+            "es": "Dormitorio iluminado con cama y ventanas en un apartamento de Bogotá.",
+            "en": "Bright bedroom with a bed and windows in a Bogotá apartment."
           },
           "video": "https://www.youtube-nocookie.com/embed/fSqMGY3r45k",
           "video_title": {
@@ -787,7 +832,12 @@
             "en": "A wind-down routine"
           },
           "review": "[VERIFICAR VIDEO]",
-          "extra_videos": []
+          "extra_videos": [],
+          "attribution": {
+            "author": "Gustavo Galeano Maz",
+            "url": "https://www.pexels.com/photo/photo-of-a-bedroom-10649527/",
+            "location": "Bogotá, Colombia"
+          }
         },
         "interaction": "sleep",
         "review": "[VERIFICAR] Revisión editorial y vigencia antes de publicar / Editorial and currency review before publishing.",

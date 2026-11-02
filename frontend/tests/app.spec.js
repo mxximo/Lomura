@@ -384,22 +384,14 @@ test("keyboard controls and mobile menu navigation", async ({ page }) => {
   await expect(page.locator("legend")).toBeFocused();
 });
 
-test("daily intention persists locally and links to the relevant practice", async ({
-  page,
-}) => {
+test("home topic selection and the primary action preserve the last lesson", async ({ page }) => {
   await page.goto("/");
-  await page.evaluate(() => localStorage.removeItem("dw-intention"));
-  await page.reload();
-  await page.getByRole("button", { name: "Estudiar con foco" }).click();
-  await expect(page.getByText("Tu intención para hoy")).toBeVisible();
-  await page.getByRole("link", { name: "Ir al siguiente paso" }).click();
+  await page.locator(".simple-topic").filter({ hasText: "Tiempo y enfoque" }).click();
   await expect(page).toHaveURL(/\/learn\/pomodoro$/);
+  await expect.poll(() => page.evaluate(() => localStorage.getItem("dw-last-lesson"))).toBe("pomodoro");
   await page.goto("/");
-  await expect(page.getByText("Estudiar con foco")).toBeVisible();
-  await page.getByRole("button", { name: "Cambiar" }).click();
-  await expect(
-    page.getByRole("button", { name: "Descansar la mirada" }),
-  ).toBeVisible();
+  await page.getByRole("link", { name: "Retomar mi recorrido" }).click();
+  await expect(page).toHaveURL(/\/learn\/pomodoro$/);
 });
 
 test("takeaway can be copied without changing the lesson", async ({

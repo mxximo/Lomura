@@ -99,3 +99,11 @@ ActualizaciÃ³n del 3 de octubre de 2026:
 - Veinte archivos WebP de 480/960 px suman 465,546 bytes. Se sirven desde el proyecto con srcset, dimensiones estables y descripciones bilingües del encuadre real. El símbolo y la portada de Lumora se conservan.
 - Comprobadas las diez imágenes a 320 y 1440 px en ambos temas (40 cargas sin desbordamiento). Tres matrices de 16 rutas aprobadas a 320, 390 y 1440 px. Backend: 34 pruebas locales aprobadas, 16 de PostgreSQL omitidas localmente. Compilación Vite correcta.
 - Colección revisada en `artifacts/photos-final.jpg` y capturas de ergonomía en `artifacts/photo-ergonomics-{light,dark}-{320,1440}.png`. Fotografías de ambientación: las recomendaciones técnicas se mantienen en el texto y las actividades.
+
+## Inicio simplificado — 2 de noviembre de 2026
+
+- Bienvenida con una explicación breve y una acción principal para empezar o retomar. Cinco tarjetas de temas uniformes y accesos secundarios a quiz, videos y encuesta. Se retiraron del inicio el carrusel, el selector de intención, el medidor de horas, el recordatorio, la vista de temas superpuesta y los banners repetidos.
+- Comentarios cerrados inicialmente, con carga al abrirlos y acceso directo mediante `/#comments`. El borrador se conserva en la pestaña, con consentimiento renovado al recargar. El progreso conserva confirmación antes de reiniciarse.
+- Se completó la integración de nueve fotografías con ubicación colombiana documentada, pendiente de la revisión anterior, y sus créditos. Una imagen técnica de inicio de sesión se conserva por su correspondencia con la lección.
+- Compilación Vite correcta; 34 pruebas locales del backend aprobadas (16 de PostgreSQL omitidas localmente). Tres matrices de 16 rutas aprobadas a 320, 390 y 1440 px. Cuatro flujos de comentarios aprobados en escritorio y móvil; borrador, navegación de comunidad, carga diferida, quiz oscuro y retorno a la última lección comprobados.
+- Axe sin infracciones en inicio a 390/1440 px, en ambos temas. Capturas: `artifacts/home-simple-{light,dark}-{390,1440}.png`. Las comprobaciones usan Chromium emulado y datos aislados.

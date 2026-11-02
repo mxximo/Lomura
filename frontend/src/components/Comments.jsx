@@ -3,7 +3,20 @@ import { useLanguage } from '../context/LanguageContext';
 import { comments } from '../i18n/comments';
 import { loadComments, sendComment } from '../services/api';
 
-export default function Comments() {
+const draftKey = 'dw-comment-draft';
+function readDraft() {
+  try {
+    const draft = JSON.parse(sessionStorage.getItem(draftKey));
+    if (!draft || Date.now() - draft.saved > 86400000) return {};
+    return {
+      alias: typeof draft.alias === 'string' ? draft.alias.slice(0, 40) : '',
+      body: typeof draft.body === 'string' ? draft.body.slice(0, 600) : '',
+      submission: draft.submission?.id && /^[\da-f-]{36}$/i.test(draft.submission.id) && typeof draft.submission.fingerprint === 'string' ? draft.submission : null,
+    };
+  } catch { return {}; }
+}
+
+export default function Comments({ id = "comments" }) {
   const { lang } = useLanguage();
   const t = comments[lang];
   const [data, setData] = useState(null);
@@ -11,14 +24,25 @@ export default function Comments() {
   const [refresh, setRefresh] = useState(0);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
-  const [alias, setAlias] = useState('');
-  const [body, setBody] = useState('');
+  const [draft] = useState(readDraft);
+  const [alias, setAlias] = useState(draft.alias || '');
+  const [body, setBody] = useState(draft.body || '');
   const [consent, setConsent] = useState(false);
   const [busy, setBusy] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState('');
-  const submission = useRef(null);
+  const submission = useRef(draft.submission || null);
   const lock = useRef(false);
+  function saveDraft() {
+    try {
+      if (alias || body) sessionStorage.setItem(draftKey, JSON.stringify({ alias, body, submission: submission.current, saved: Date.now() }));
+      else sessionStorage.removeItem(draftKey);
+    } catch { /* Submission still works when browser storage is unavailable. */ }
+  }
+  useEffect(saveDraft, [alias, body]);
+  useEffect(() => {
+    if (data && !loading && page > Math.max(1, Math.ceil(data.total / 6))) setPage(Math.max(1, Math.ceil(data.total / 6)));
+  }, [data, loading, page]);
   useEffect(() => {
     let active = true;
     setLoading(true); setLoadError(false);
@@ -30,11 +54,13 @@ export default function Comments() {
   async function submit(event) {
     event.preventDefault();
     if (lock.current) return;
+    if (body.trim().length < 10) { setError('tooShort'); return; }
     lock.current = true; setBusy(true); setError('');
     const values = { alias: alias.trim(), body: body.trim(), consent, language: lang };
     const fingerprint = JSON.stringify(values);
     if (submission.current?.fingerprint !== fingerprint)
       submission.current = { fingerprint, id: crypto.randomUUID() };
+    saveDraft();
     try {
       await sendComment({ ...values, submission_id: submission.current.id });
       setSent(true); setAlias(''); setBody(''); setConsent(false); submission.current = null;
@@ -42,7 +68,7 @@ export default function Comments() {
     finally { lock.current = false; setBusy(false); }
   }
   return (
-    <section id="comments" className="community-section" aria-labelledby="community-title">
+    <section id={id} className="community-section" aria-labelledby="community-title">
       <header className="community-heading">
         <span className="eyebrow">{t.eyebrow}</span>
         <h2 id="community-title">{t.title}</h2><p>{t.intro}</p>
@@ -64,6 +90,7 @@ export default function Comments() {
         <div className="community-compose">
           {sent ? <div className="comment-received" role="status"><h3>{t.sent}</h3><p>{t.sentText}</p><button className="text-button" onClick={() => setSent(false)}>{t.another} →</button></div> : <form onSubmit={submit}>
             <h3>{t.write}</h3>
+            {body && <p className="comment-draft-note">{t.draft}<button type="button" className="text-button" disabled={busy} onClick={() => { setAlias(''); setBody(''); setConsent(false); submission.current = null; setError(''); }}>{t.discard}</button></p>}
             <label htmlFor="comment-alias">{t.alias}</label>
             <input id="comment-alias" maxLength={40} value={alias} onChange={e => setAlias(e.target.value)} disabled={busy} autoComplete="off" />
             <label htmlFor="comment-body">{t.body}</label>

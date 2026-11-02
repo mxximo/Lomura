@@ -48,7 +48,7 @@ function RouteEffects({ pathname }) {
 }
 export default function App() {
   const { t, lang } = useLanguage();
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   // Crossfade between routes with the View Transitions API when available;
   // hash jumps and reduced-motion users keep the instant swap. The motion
   // hook follows the displayed route so entrances target mounted content.
@@ -102,7 +102,7 @@ export default function App() {
             }
           >
             <Routes location={displayPath}>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home hash={hash} />} />
               <Route path="/learn/:slug" element={<Lesson />} />
               <Route path="/videos" element={<Videos />} />
               <Route path="/survey" element={<Survey />} />

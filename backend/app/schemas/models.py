@@ -23,9 +23,16 @@ class ExtraVideo(StrictModel):
     title: Text
 
 
+class PhotoAttribution(StrictModel):
+    author: str
+    url: HttpUrl
+    location: str | None = None
+
+
 class Media(StrictModel):
     image: str
     alt: Text
+    attribution: PhotoAttribution | None = None
     video: str | None = None
     video_title: Text | None = None
     review: str | None = None
